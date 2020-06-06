@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 1,
+    "health": 8,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 5,
+    "description": "Taunt, Rush Battlecry: Gain +4 Attack this turn",
+    "goldCost": 2,
+    "name": "Supreme Abyssal",
+    "characterType": "Card"
+  }
+}

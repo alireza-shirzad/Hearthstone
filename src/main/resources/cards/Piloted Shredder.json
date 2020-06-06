@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 4,
+    "health": 3,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 4,
+    "description": "Deathrattle: Summon a random 2-Cost minion",
+    "goldCost": 2,
+    "name": "Piloted Shredder",
+    "characterType": "Card"
+  }
+}

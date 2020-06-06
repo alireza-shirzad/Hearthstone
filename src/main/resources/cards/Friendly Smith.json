@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Rogue",
+    "rarity": "Common",
+    "manaCost": 1,
+    "description": "Discover a weapon from any class. Add it to your Adventure Deck with +2/+2",
+    "goldCost": 2,
+    "name": "Friendly Smith",
+    "characterType": "Card"
+  }
+}

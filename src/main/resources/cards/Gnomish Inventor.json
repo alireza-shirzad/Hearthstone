@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 2,
+    "health": 4,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Free",
+    "manaCost": 4,
+    "description": "Battlecry: Draw a card",
+    "goldCost": 2,
+    "name": "Gnomish Inventor",
+    "characterType": "Card"
+  }
+}

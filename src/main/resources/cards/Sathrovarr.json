@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 5,
+    "health": 5,
+    "subtype": "Demon",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Legendary",
+    "manaCost": 9,
+    "description": "Choose a friendly minion. Add a copy of it to your hand, deck and battlefield",
+    "goldCost": 2,
+    "name": "Sathrovarr",
+    "characterType": "Card"
+  }
+}

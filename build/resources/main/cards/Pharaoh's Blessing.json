@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "neutral",
+    "rarity": "Rare",
+    "manaCost": 6,
+    "description": "Give a minion +4/+4, Divine Shield, and Taunt",
+    "goldCost": 2,
+    "name": "Pharaoh's Blessing",
+    "characterType": "Card"
+  }
+}

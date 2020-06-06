@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 1,
+    "health": 6,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 3,
+    "description": "Taunt While at full Health, this has +2 Attack",
+    "goldCost": 2,
+    "name": "Overconfident Orc",
+    "characterType": "Card"
+  }
+}

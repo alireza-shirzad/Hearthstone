@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 4,
+    "health": 2,
+    "subtype": "Beast",
+    "cardType": "Minion",
+    "heroClass": "Warlock",
+    "rarity": "Legendary",
+    "manaCost": 3,
+    "description": "At the end of your turn, deal 1 damage to all other minions",
+    "goldCost": 2,
+    "name": "Dreadscale",
+    "characterType": "Card"
+  }
+}

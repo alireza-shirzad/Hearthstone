@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Hunter",
+    "rarity": "Common",
+    "manaCost": 3,
+    "description": "Destroy a random enemy minion",
+    "goldCost": 2,
+    "name": "Deadly Shot",
+    "characterType": "Card"
+  }
+}

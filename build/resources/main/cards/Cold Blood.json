@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 2,
+    "description": "Give a minion +2 Attack. Combo: +4 Attack instead",
+    "goldCost": 2,
+    "name": "Cold Blood",
+    "characterType": "Card"
+  }
+}

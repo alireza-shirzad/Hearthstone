@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Mage",
+    "rarity": "Rare",
+    "manaCost": 4,
+    "description": "Transform a minion into a +1/+1 sheep",
+    "goldCost": 2,
+    "name": "Polymorph",
+    "characterType": "Card"
+  }
+}

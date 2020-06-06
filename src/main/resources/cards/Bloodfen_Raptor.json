@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 3,
+    "health": 2,
+    "subtype": "Beast",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Free",
+    "manaCost": 2,
+    "description": "",
+    "goldCost": 2,
+    "name": "Bloodfen_Raptor",
+    "characterType": "Card"
+  }
+}

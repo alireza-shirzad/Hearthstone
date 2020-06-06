@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Neutral",
+    "rarity": "Legendary",
+    "manaCost": 1,
+    "description": "Quest: Play 6 Battlecry cards. Reward: Heart of Vir'naal",
+    "goldCost": 2,
+    "name": "Corrupt the Waters",
+    "characterType": "Card"
+  }
+}

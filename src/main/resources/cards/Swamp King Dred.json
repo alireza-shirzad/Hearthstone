@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 9,
+    "health": 9,
+    "subtype": "Beast",
+    "cardType": "Minion",
+    "heroClass": "Hunter",
+    "rarity": "Legendary",
+    "manaCost": 7,
+    "description": "After your opponent plays a minion, attack it",
+    "goldCost": 2,
+    "name": "Swamp King Dred",
+    "characterType": "Card"
+  }
+}

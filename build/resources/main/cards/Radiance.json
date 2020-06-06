@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Priest",
+    "rarity": "Free",
+    "manaCost": 1,
+    "description": "Restore 5 Health to your hero",
+    "goldCost": 2,
+    "name": "Radiance",
+    "characterType": "Card"
+  }
+}

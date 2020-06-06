@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 1,
+    "description": "Sidequest: Spend 10 Mana on minions. Reward: Summon a minion from your deck",
+    "goldCost": 2,
+    "name": "Strength in Numbers",
+    "characterType": "Card"
+  }
+}

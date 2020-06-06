@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 6,
+    "health": 3,
+    "subtype": "Demon",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 6,
+    "description": "Battlecry: Deal 6 damage randomly split among all other minions",
+    "goldCost": 2,
+    "name": "Scavenging Shivarra",
+    "characterType": "Card"
+  }
+}

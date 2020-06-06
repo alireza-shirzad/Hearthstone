@@ -1,0 +1,15 @@
+{
+  "type": "Game_Character_Management.Card_Management.Weapon_Card",
+  "data": {
+    "attack": 2,
+    "durability": 2,
+    "cardType": "Weapon",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 1,
+    "description": "",
+    "goldCost": 2,
+    "name": "Battle Axe",
+    "characterType": "Card"
+  }
+}

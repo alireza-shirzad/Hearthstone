@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 8,
+    "health": 8,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 8,
+    "description": "Battlecry: If you control a Beast, gain Taunt",
+    "goldCost": 2,
+    "name": "Fossilized Devilsaur",
+    "characterType": "Card"
+  }
+}

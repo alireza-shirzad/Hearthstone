@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Mage",
+    "rarity": "Legendary",
+    "manaCost": 1,
+    "description": "Quest: Cast 10 spells. Reward: Ascendant Scroll",
+    "goldCost": 2,
+    "name": "Raid the Sky Temple",
+    "characterType": "Card"
+  }
+}

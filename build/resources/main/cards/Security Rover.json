@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 2,
+    "health": 6,
+    "subtype": "Mech",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 6,
+    "description": "Whenever this minion takes damage, summon a 2/3 Mech with Taunt",
+    "goldCost": 2,
+    "name": "Security Rover",
+    "characterType": "Card"
+  }
+}

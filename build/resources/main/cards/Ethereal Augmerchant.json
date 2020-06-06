@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 2,
+    "health": 1,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 1,
+    "description": "Battlecry: Deal 1 damage to a minion and give it Spell Damage +1",
+    "goldCost": 2,
+    "name": "Ethereal Augmerchant",
+    "characterType": "Card"
+  }
+}

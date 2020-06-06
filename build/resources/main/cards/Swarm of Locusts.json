@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 6,
+    "description": "Summon seven 1/1 Locusts with Rush",
+    "goldCost": 2,
+    "name": "Swarm of Locusts",
+    "characterType": "Card"
+  }
+}

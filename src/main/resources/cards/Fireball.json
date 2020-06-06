@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Mage",
+    "rarity": "Free",
+    "manaCost": 4,
+    "description": "Deal 6 damage",
+    "goldCost": 2,
+    "name": "Fireball",
+    "characterType": "Card"
+  }
+}

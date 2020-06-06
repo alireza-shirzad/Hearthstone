@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 2,
+    "health": 3,
+    "subtype": "Beast",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 2,
+    "description": "",
+    "goldCost": 2,
+    "name": "River Crocolisk",
+    "characterType": "Card"
+  }
+}

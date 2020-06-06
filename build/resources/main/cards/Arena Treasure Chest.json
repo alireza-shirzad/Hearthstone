@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 0,
+    "health": 4,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 4,
+    "description": "Deathrattle: Draw 2 cards",
+    "goldCost": 2,
+    "name": "Arena Treasure Chest",
+    "characterType": "Card"
+  }
+}

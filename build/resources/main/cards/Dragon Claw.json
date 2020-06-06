@@ -1,0 +1,15 @@
+{
+  "type": "Game_Character_Management.Card_Management.Weapon_Card",
+  "data": {
+    "attack": 5,
+    "durability": 2,
+    "cardType": "Weapon",
+    "heroClass": "Neutral",
+    "rarity": "Free",
+    "manaCost": 5,
+    "description": "",
+    "goldCost": 2,
+    "name": "Dragon Claw",
+    "characterType": "Card"
+  }
+}

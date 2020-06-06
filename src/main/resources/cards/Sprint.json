@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Rogue",
+    "rarity": "Common",
+    "manaCost": 7,
+    "description": "Draw 4 cards",
+    "goldCost": 2,
+    "name": "Sprint",
+    "characterType": "Card"
+  }
+}

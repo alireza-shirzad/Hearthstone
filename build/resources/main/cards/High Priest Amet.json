@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 7,
+    "health": 2,
+    "subtype": "",
+    "cardType": "Minion",
+    "heroClass": "Priest",
+    "rarity": "Legendary",
+    "manaCost": 4,
+    "description": "Whenever you summon a minion, set its Health equal to this minion's",
+    "goldCost": 2,
+    "name": "High Priest Amet",
+    "characterType": "Card"
+  }
+}

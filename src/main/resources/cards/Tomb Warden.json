@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 3,
+    "health": 6,
+    "subtype": "Mech",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 8,
+    "description": "Taunt,Battlecry: Summon a copy of this minion",
+    "goldCost": 2,
+    "name": "Tomb Warden",
+    "characterType": "Card"
+  }
+}

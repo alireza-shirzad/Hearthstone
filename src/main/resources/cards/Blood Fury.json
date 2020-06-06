@@ -1,0 +1,15 @@
+{
+  "type": "Game_Character_Management.Card_Management.Weapon_Card",
+  "data": {
+    "attack": 3,
+    "durability": 8,
+    "cardType": "Weapon",
+    "heroClass": "Warlock",
+    "rarity": "Common",
+    "manaCost": 3,
+    "description": "",
+    "goldCost": 2,
+    "name": "Blood Fury",
+    "characterType": "Card"
+  }
+}

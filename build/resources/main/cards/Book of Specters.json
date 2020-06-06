@@ -1,0 +1,13 @@
+{
+  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "data": {
+    "cardType": "Spell",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 2,
+    "description": "Draw 3 cards. Discard any spells drawn",
+    "goldCost": 2,
+    "name": "Book of Specters",
+    "characterType": "Card"
+  }
+}

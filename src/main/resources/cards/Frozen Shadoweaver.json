@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 4,
+    "health": 3,
+    "subtype": null,
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Common",
+    "manaCost": 3,
+    "description": "Battlecry: Freeze an enemy",
+    "goldCost": 2,
+    "name": "Frozen Shadoweaver",
+    "characterType": "Card"
+  }
+}

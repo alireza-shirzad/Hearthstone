@@ -1,0 +1,16 @@
+{
+  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "data": {
+    "attack": 4,
+    "health": 4,
+    "subtype": "Beast",
+    "cardType": "Minion",
+    "heroClass": "Neutral",
+    "rarity": "Rare",
+    "manaCost": 5,
+    "description": "Taunt. Deathrattle: Deal 2 damage to ALL characters",
+    "goldCost": 2,
+    "name": "Abomination",
+    "characterType": "Card"
+  }
+}
