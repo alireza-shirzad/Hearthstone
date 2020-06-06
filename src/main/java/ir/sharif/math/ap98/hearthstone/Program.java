@@ -1,12 +1,15 @@
 package ir.sharif.math.ap98.hearthstone;
 
+import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.io.confLoader.GraphicConfigLoader;
+
+import javax.swing.*;
 
 public class Program {
     public static void main(String[] args){
         run();
     }
     private static void run(){
-
+        MainFrame.getInstance();
     }
 }

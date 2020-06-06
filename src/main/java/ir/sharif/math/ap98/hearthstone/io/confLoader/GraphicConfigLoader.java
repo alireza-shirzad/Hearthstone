@@ -4,9 +4,8 @@ import java.io.IOException;
 
 public class GraphicConfigLoader extends ConfigLoader {
 
-    private String propFileName;
     public GraphicConfigLoader(){
-        super("main/resources/conf/graphicConfig.properties");
+        super("src/main/resources/conf/graphicConfig.properties");
     }
 //Singletone design pattern
     private static GraphicConfigLoader graphicConfigLoader;

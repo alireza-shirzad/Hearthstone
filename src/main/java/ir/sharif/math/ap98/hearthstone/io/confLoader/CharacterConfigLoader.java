@@ -3,7 +3,7 @@ package ir.sharif.math.ap98.hearthstone.io.confLoader;
 public class CharacterConfigLoader extends ConfigLoader {
     private String propFileName;
     public CharacterConfigLoader(){
-        super("assets/main/resources/conf/CharacterConfig.properties");
+        super("src/main/resources/conf/CharacterConfig.properties");
     }
 
     // Singletone design pattern

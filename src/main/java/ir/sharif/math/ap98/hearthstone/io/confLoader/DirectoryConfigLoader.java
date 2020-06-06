@@ -4,7 +4,7 @@ public class DirectoryConfigLoader extends ConfigLoader {
 
     private String propFileName;
     public DirectoryConfigLoader(){
-        super("main/resources/conf/directoryConfig.properties");
+        super("src/main/resources/conf/directoryConfig.properties");
     }
 
     // Singletone design pattern
