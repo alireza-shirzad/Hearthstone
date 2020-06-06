@@ -72,6 +72,7 @@ public class FileOperator {
 
     public enum fileType{
         CARD,
-        PLAYER;
+        PLAYER,
+        LOG;
     }
 }
