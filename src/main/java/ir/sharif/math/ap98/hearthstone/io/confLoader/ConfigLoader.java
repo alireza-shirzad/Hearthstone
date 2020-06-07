@@ -23,7 +23,7 @@ public abstract class ConfigLoader {
         }
     }
 
-    public String  getPropVal(String propName){
+    public String getPropVal(String propName){
         return properties.getProperty(propName);
         //TODO set the default value of each configuration
     }

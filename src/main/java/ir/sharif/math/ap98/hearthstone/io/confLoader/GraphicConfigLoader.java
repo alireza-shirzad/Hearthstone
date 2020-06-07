@@ -4,6 +4,8 @@ import java.io.IOException;
 
 public class GraphicConfigLoader extends ConfigLoader {
 
+
+
     public GraphicConfigLoader(){
         super("src/main/resources/conf/graphicConfig.properties");
     }

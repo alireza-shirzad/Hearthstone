@@ -11,9 +11,9 @@ public class MainFrame extends JFrame {
     private String gameTitle;
 
     public MainFrame(){
-        this.frameWidth = Integer.valueOf(GraphicConfigLoader.getInstance().getPropVal("frameWidth"));
-        this.frameHeight = Integer.valueOf(GraphicConfigLoader.getInstance().getPropVal("frameHeight"));
-        this.gameTitle = GraphicConfigLoader.getInstance().getPropVal("frameTitle");
+        this.frameWidth = guiConstants.FRAME_WIDTH;
+        this.frameHeight = guiConstants.FRAME_HEIGHT;
+        this.gameTitle = guiConstants.GAME_TITLE;
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setSize(frameWidth,frameHeight);
@@ -21,7 +21,7 @@ public class MainFrame extends JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setResizable(false);
-        this.setLayout(new BorderLayout());
+        this.setLayout(new CardLayout());
     }
     public void Update(){
         repaint();
@@ -30,7 +30,7 @@ public class MainFrame extends JFrame {
 
     //// Singleton Design
     private static MainFrame mainFrame;
-    public static MainFrame getInstance() {
+    public static synchronized MainFrame getInstance() {
         if(mainFrame==null) { mainFrame = new MainFrame();}
         return mainFrame;
     }
