@@ -35,7 +35,6 @@ public class FileOperator {
         }
     }
     public String Read(String name, fileType fileType){
-
         String text = "";
         try {
             text = new String(Files.readAllBytes(Paths.get(getAddress(fileType) + "/" + name)));

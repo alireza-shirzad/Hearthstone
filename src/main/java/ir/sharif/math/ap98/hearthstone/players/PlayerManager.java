@@ -25,7 +25,7 @@ public class PlayerManager {
     //// Save and Load Functions
     public void Save(Player player) {
         String json = mapper.toJson(player, Player.class);
-        fileOperator.Write(json, player.getUsername(), FileOperator.fileType.PLAYER, false);
+        fileOperator.Write(json, player.getUsername() + ".json", FileOperator.fileType.PLAYER, false);
     }
     public Player Load(String Username){
         String text = fileOperator.Read(Username + ".json", FileOperator.fileType.PLAYER);

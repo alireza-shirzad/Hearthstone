@@ -1,5 +1,6 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.signPanel;
 
+import ir.sharif.math.ap98.hearthstone.gui.BackgroundPanel;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.SignInCommitButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.SignUpCommitButton;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
@@ -11,9 +12,14 @@ import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.gui.fields.MyPassField;
 import ir.sharif.math.ap98.hearthstone.gui.fields.MyTextField;
 import ir.sharif.math.ap98.hearthstone.players.SignInManager;
+import sun.jvm.hotspot.debugger.ThreadAccess;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.time.chrono.Era;
+import java.util.concurrent.TimeUnit;
 
 public class SignDrawer extends Drawer {
     private Header header;
@@ -54,14 +60,19 @@ public class SignDrawer extends Drawer {
         signInCommitButton = new SignInCommitButton(usernameField,passwordField,this);
         signInCommitButton.setBounds(410, 350, 260, 70);
         jPanel.add(signInCommitButton);
+        MainFrame.getInstance().getRootPane().setDefaultButton(signInCommitButton);
+        MainFrame.getInstance().Update();
     }
     public void designSignUpButton(){
         signUpCommitButton = new SignUpCommitButton(usernameField,passwordField,this);
         signUpCommitButton.setBounds(410, 350, 260, 70);
         jPanel.add(signUpCommitButton);
+        MainFrame.getInstance().getRootPane().setDefaultButton(signUpCommitButton);
+        MainFrame.getInstance().Update();
     }
     public void designResponse(String response, Response.type type){
         responseLabel = new Response(response,type);
         jPanel.add(responseLabel);
+        MainFrame.getInstance().Update();
     }
 }

@@ -12,9 +12,11 @@ public class SignInButton extends SignButton {
     public SignInButton(){
         super("Sign In");
         this.setBounds(770, 200, 280, 80);
-        addActionListener(e -> {
-            BackgroundPanel.getInstance().remove(0);
-            BackgroundPanel.getInstance().add(new SignInPanel());
-        });
+    }
+
+    @Override
+    public void press() {
+        BackgroundPanel.getInstance().remove(0);
+        BackgroundPanel.getInstance().add(new SignInPanel());
     }
 }

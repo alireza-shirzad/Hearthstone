@@ -11,9 +11,11 @@ public class SignUpButton extends SignButton {
     public SignUpButton(){
         super("Sign Up");
         this.setBounds(30, 200, 280, 80);
-        addActionListener(e -> {
-            BackgroundPanel.getInstance().remove(0);
-            BackgroundPanel.getInstance().add(new SignUpPanel());
-        });
+    }
+
+    @Override
+    public void press() {
+        BackgroundPanel.getInstance().remove(0);
+        BackgroundPanel.getInstance().add(new SignUpPanel());
     }
 }

@@ -6,7 +6,7 @@ import ir.sharif.math.ap98.hearthstone.gui.panels.signPanel.SignDrawer;
 import javax.swing.*;
 import java.awt.*;
 
-public class SignCommitButton extends MyButton {
+public abstract class SignCommitButton extends MyButton{
     protected JTextField jTextField;
     protected JPasswordField jPasswordField;
     protected SignDrawer signDrawer;
@@ -17,7 +17,5 @@ public class SignCommitButton extends MyButton {
         this.setFont(new Font(GUIConstants.HEADER1_FONT_NAME, Font.BOLD, 50));
         this.setForeground(GUIConstants.COLOR5);
         this.setBorder(BorderFactory.createLineBorder(GUIConstants.COLOR2,7,true));
-
-
     }
 }

@@ -2,16 +2,19 @@ package ir.sharif.math.ap98.hearthstone.gui.Buttons;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.font.TextAttribute;
 import java.util.Map;
 
-public class MyButton extends JButton {
+public abstract class MyButton extends JButton {
     public MyButton(String name){
         this.setLayout(null);
         this.setText(name);
         this.setContentAreaFilled(false);
         this.requestFocus();
         this.setOpaque(false);
+        addActionListener(e -> press());
         this.addMouseListener(new java.awt.event.MouseAdapter() {
             Font originalFont = null;
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -27,5 +30,6 @@ public class MyButton extends JButton {
             }
         });
     }
+    public abstract void press();
 
 }
