@@ -29,12 +29,12 @@ public class StartDrawer extends Drawer implements CanAnimate {
         g2D.drawImage(this.animatedImage,animatedX,animatedY,null);
     }
 
-    public void makeSignUpButton(){
+    public void designSignInButton(){
         signUpButton = new SignUpButton();
         jPanel.add(signUpButton);
     }
 
-    public void makeSignInButton(){
+    public void designSignUpButton(){
         signInButton = new SignInButton();
         jPanel.add(signInButton);
     }

@@ -1,5 +1,6 @@
 package ir.sharif.math.ap98.hearthstone.io.fileOperation;
 
+import ir.sharif.math.ap98.hearthstone.gui.IOConstants;
 import ir.sharif.math.ap98.hearthstone.io.confLoader.DirectoryConfigLoader;
 
 import java.io.File;
@@ -37,7 +38,7 @@ public class FileOperator {
 
         String text = "";
         try {
-            text = new String(Files.readAllBytes(Paths.get(getAddress(fileType) + "\\" + name)));
+            text = new String(Files.readAllBytes(Paths.get(getAddress(fileType) + "/" + name)));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -57,8 +58,8 @@ public class FileOperator {
 
     private String getAddress(fileType fileType){
         switch (fileType){
-            case PLAYER: return DirectoryConfigLoader.getInstance().getPropVal("playerDirectory");
-            case CARD: return DirectoryConfigLoader.getInstance().getPropVal("cardDirectory");
+            case PLAYER: return IOConstants.PLAYERS_DIRECTORY;
+            case CARD: return IOConstants.CARD_DIRECTORY;
             default: return null;
         }
     }

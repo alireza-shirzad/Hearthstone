@@ -1,7 +1,7 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.startPanel;
+import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.gui.panels.MyPanel;
-import ir.sharif.math.ap98.hearthstone.gui.guiConstants;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,19 +19,25 @@ public class StartPanel extends MyPanel {
     public StartPanel(){
         super();
         startDrawer = new StartDrawer(this);
+        design();
+    }
+
+    @Override
+    public void design() {
         startAnimation();
         DesginButtons();
     }
+
     private void startAnimation(){
-        timer = new Timer(guiConstants.RENDERING_SPEED, e -> {
+        timer = new Timer(GUIConstants.RENDERING_SPEED, e -> {
             repaint();
             MainFrame.getInstance().Update();
         });
         timer.start();
     }
     private void DesginButtons(){
-        startDrawer.makeSignInButton();
-        startDrawer.makeSignUpButton();
+        startDrawer.designSignInButton();
+        startDrawer.designSignUpButton();
         MainFrame.getInstance().Update();
     }
 

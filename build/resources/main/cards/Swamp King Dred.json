@@ -1,5 +1,5 @@
 {
-  "type": "Game_Character_Management.Card_Management.Minion_Card",
+  "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
   "data": {
     "attack": 9,
     "health": 9,

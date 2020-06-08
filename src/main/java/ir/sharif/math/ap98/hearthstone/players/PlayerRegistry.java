@@ -10,7 +10,7 @@ import ir.sharif.math.ap98.hearthstone.io.json.AbstractElementAdapter;
 import java.util.ArrayList;
 
 public class PlayerRegistry {
-    private  ArrayList<String> RegisteredPlayers;
+    private  ArrayList<String> registeredPlayers;
     private static FileOperator fileOperator = FileOperator.getInstance();
     private static PlayerRegistry playerRegistry;
     //// Semi-Singleton Design
@@ -19,41 +19,38 @@ public class PlayerRegistry {
         return playerRegistry;
     }
 
+
     //// Save and Load Functions
     private static void save() {
-            GsonBuilder gsonBilder = new GsonBuilder().setPrettyPrinting();
-            gsonBilder.registerTypeAdapter(PlayerRegistry.class, new AbstractElementAdapter());
-            Gson mapper = gsonBilder.create();
-            String json = mapper.toJson(playerRegistry, Card.class);
+            Gson gson = new Gson();
+            String json = gson.toJson(playerRegistry, PlayerRegistry.class);
             fileOperator.Write(json, "Player_Registry.json", FileOperator.fileType.PLAYER, false);
     }
     private static PlayerRegistry load(){
-        GsonBuilder gsonBilder = new GsonBuilder().setPrettyPrinting();
-        gsonBilder.registerTypeAdapter(PlayerRegistry.class, new AbstractElementAdapter());
-        Gson mapper = gsonBilder.create();
+        Gson gson = new Gson();
         String text = fileOperator.Read("Player_Registry.json", FileOperator.fileType.PLAYER);
-        playerRegistry = mapper.fromJson(text, PlayerRegistry.class);
+        playerRegistry = gson.fromJson(text, PlayerRegistry.class);
         return playerRegistry;
     }
 
     public void Add(Player player){
-        this.RegisteredPlayers.add(player.getUsername());
+        this.registeredPlayers.add(player.getUsername());
         save();
     }
     public void Remove(Player player){
-        this.RegisteredPlayers.remove(player.getUsername());
+        this.registeredPlayers.remove(player.getUsername());
         save();
     }
     public boolean IsPlayer(Player player){
-        return this.RegisteredPlayers.contains(player.getUsername());
+        return this.registeredPlayers.contains(player.getUsername());
     }
 
 
-    public ArrayList<String> getRegisteredPlayers() {
-        return RegisteredPlayers;
+    public ArrayList<String> getregisteredPlayers() {
+        return registeredPlayers;
     }
 
-    public void setRegisteredPlayers(ArrayList<String> registeredPlayers) {
-        RegisteredPlayers = registeredPlayers;
+    public void setregisteredPlayers(ArrayList<String> registeredPlayers) {
+        registeredPlayers = registeredPlayers;
     }
 }

@@ -1,5 +1,5 @@
 {
-  "type": "Game_Character_Management.Card_Management.Weapon_Card",
+  "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
   "data": {
     "attack": 3,
     "durability": 8,

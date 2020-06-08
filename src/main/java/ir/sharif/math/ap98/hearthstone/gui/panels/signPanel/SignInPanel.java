@@ -6,9 +6,16 @@ public class SignInPanel extends MyPanel {
     public SignInPanel(){
         super();
         signDrawer = new SignDrawer(this);
-        designSignInLabel();
+        design();
+
     }
-    private void designSignInLabel(){
-        signDrawer.designLabel("Sign In");
+
+    @Override
+    public void design() {
+        signDrawer.designHeader("Sign In");
+        signDrawer.designUserPassLabel();
+        signDrawer.designUserPassField();
+        signDrawer.designSignInButton();
     }
+
 }

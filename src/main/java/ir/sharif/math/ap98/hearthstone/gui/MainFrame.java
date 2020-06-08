@@ -11,9 +11,9 @@ public class MainFrame extends JFrame {
     private String gameTitle;
 
     public MainFrame(){
-        this.frameWidth = guiConstants.FRAME_WIDTH;
-        this.frameHeight = guiConstants.FRAME_HEIGHT;
-        this.gameTitle = guiConstants.GAME_TITLE;
+        this.frameWidth = GUIConstants.FRAME_WIDTH;
+        this.frameHeight = GUIConstants.FRAME_HEIGHT;
+        this.gameTitle = GUIConstants.GAME_TITLE;
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setSize(frameWidth,frameHeight);

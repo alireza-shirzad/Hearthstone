@@ -5,13 +5,11 @@ import ir.sharif.math.ap98.hearthstone.io.log.Logger;
 public class SignUpManager extends SignManager {
 
     public SignUpManager() {super();}
-
     private static SignUpManager signUpManager;
     public static SignUpManager getInstance() {
         if(signUpManager==null) { signUpManager = new SignUpManager();}
         return signUpManager;
     }
-
 
 
     public Result signUp(String Username, String Password){
@@ -21,7 +19,6 @@ public class SignUpManager extends SignManager {
         else{
             playerRegistry.Add(player);
             playerManager.Save(player);
-            Logger.createLogger(player);
             return Result.Success;
         }
     }

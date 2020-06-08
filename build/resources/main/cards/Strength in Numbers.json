@@ -1,5 +1,5 @@
 {
-  "type": "Game_Character_Management.Card_Management.Spell_Card",
+  "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
   "data": {
     "cardType": "Spell",
     "heroClass": "Neutral",
