@@ -32,6 +32,7 @@ public class ImageOperater {
         switch (imageType){
             case BACKGROUND: return BaseAddress + "/Background";
             case LOGO: return BaseAddress + "/Logo";
+            case DECK: return BaseAddress + "/Deck";
             default: return null;
         }
     }
@@ -39,6 +40,7 @@ public class ImageOperater {
 
     public enum imageType{
         BACKGROUND,
+        DECK,
         LOGO;
     }
 

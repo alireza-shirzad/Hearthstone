@@ -1,5 +1,7 @@
 package ir.sharif.math.ap98.hearthstone.players;
 
+import ir.sharif.math.ap98.hearthstone.game.GameState;
+
 public class SignInManager extends SignManager{
 
     private SignInManager() {super();}
@@ -18,6 +20,8 @@ public class SignInManager extends SignManager{
             player = playerManager.Load(Username);
             if (!player.getPasswordHash().equals(passToHash(Password))) return Result.Error_WrongPassword;
             else{
+                GameState.getInstance().setCurrentPlayer(player);
+                GameState.getInstance().setCurrentDeck(null);
                 return Result.Success;
             }
         }

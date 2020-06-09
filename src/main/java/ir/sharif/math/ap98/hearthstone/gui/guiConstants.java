@@ -29,7 +29,7 @@ public final  class GUIConstants {
             COLOR1 = new Color(38,42,54);
             COLOR2 = new Color(176, 177, 171);
             COLOR3 = new Color(94,98,109);
-            COLOR4 = new Color(139,109,181);
+            COLOR4 = new Color(139,109,81);
             COLOR5 = new Color(202,207,203);
             HEADER_FONT_NAME = "MAD hacker";
             HEADER1_FONT_NAME = "Stencil";
