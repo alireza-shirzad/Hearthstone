@@ -4,7 +4,7 @@ import ir.sharif.math.ap98.hearthstone.io.confLoader.GraphicConfigLoader;
 
 import java.awt.*;
 
-public final  class GUIConstants {
+public final class GUIConstants {
 
         public static final int FRAME_WIDTH;
         public static final int FRAME_HEIGHT;

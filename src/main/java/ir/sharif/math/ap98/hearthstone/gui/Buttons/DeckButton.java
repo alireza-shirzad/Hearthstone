@@ -4,6 +4,7 @@ import ir.sharif.math.ap98.hearthstone.game.GameState;
 import ir.sharif.math.ap98.hearthstone.game.decks.SimpleDeck;
 import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
+import ir.sharif.math.ap98.hearthstone.gui.panels.collections.*;
 import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 
 import javax.swing.*;
@@ -41,8 +42,7 @@ public class DeckButton extends MyButton {
     @Override
     public void press() {
         GameState.getInstance().setCurrentDeck(simpleDeck);
-//        DeckCardsPanel.getInstance().Update();
-//        DeckOptionPanel.getInstance().Update();
-        MainFrame.getInstance().Update();
+        CollectionsReferences.getCurrentDeckCardsPanel().design();
+
     }
 }

@@ -35,6 +35,7 @@ public class CollectionsDrawer extends Drawer {
         jPanel.add(spareCardsScroller);
     }
     public void designSearchPanel(){
-
     }
+
+
 }

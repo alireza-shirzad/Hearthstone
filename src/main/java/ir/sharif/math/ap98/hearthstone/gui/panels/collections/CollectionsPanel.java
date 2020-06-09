@@ -1,6 +1,8 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.collections;
 
+import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.gui.panels.MyPanel;
+import sun.rmi.rmic.Main;
 
 public class CollectionsPanel extends MyPanel {
     private CollectionsDrawer drawer;
@@ -15,5 +17,6 @@ public class CollectionsPanel extends MyPanel {
         drawer.designCurrentDeckCards();
         drawer.designSpareCardsPanel();
         drawer.designSearchPanel();
+        MainFrame.getInstance().Update();
     }
 }

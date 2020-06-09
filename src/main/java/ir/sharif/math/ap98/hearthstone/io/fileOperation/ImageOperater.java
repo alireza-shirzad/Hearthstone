@@ -31,6 +31,7 @@ public class ImageOperater {
         String BaseAddress = DirectoryConfigLoader.getInstance().getPropVal("imageDirectory");
         switch (imageType){
             case BACKGROUND: return BaseAddress + "/Background";
+            case CARD: return BaseAddress + "/Cards";
             case LOGO: return BaseAddress + "/Logo";
             case DECK: return BaseAddress + "/Deck";
             default: return null;
@@ -40,6 +41,7 @@ public class ImageOperater {
 
     public enum imageType{
         BACKGROUND,
+        CARD,
         DECK,
         LOGO;
     }
