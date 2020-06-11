@@ -14,11 +14,11 @@
           "data": {
             "cardType": "Spell",
             "heroClass": "Mage",
-            "rarity": "Rare",
+            "rarity": "Free",
             "manaCost": 4,
-            "description": "Transform a minion into a +1/+1 sheep",
+            "description": "Deal 6 damage",
             "goldCost": 2,
-            "name": "Polymorph",
+            "name": "Fireball",
             "characterType": "Card"
           }
         },
@@ -27,11 +27,11 @@
           "data": {
             "cardType": "Spell",
             "heroClass": "Mage",
-            "rarity": "Free",
+            "rarity": "Rare",
             "manaCost": 4,
-            "description": "Deal 6 damage",
+            "description": "Transform a minion into a +1/+1 sheep",
             "goldCost": 2,
-            "name": "Fireball",
+            "name": "Polymorph",
             "characterType": "Card"
           }
         }
@@ -43,19 +43,6 @@
       "NumOfGames": 0,
       "NumOfWins": 0,
       "Cards": [
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
-          "data": {
-            "cardType": "Spell",
-            "heroClass": "Rogue",
-            "rarity": "Common",
-            "manaCost": 1,
-            "description": "Discover a weapon from any class. Add it to your Adventure Deck with +2/+2",
-            "goldCost": 2,
-            "name": "Friendly Smith",
-            "characterType": "Card"
-          }
-        },
         {
           "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
           "data": {
@@ -229,7 +216,7 @@
           "manaCost": 2,
           "description": "",
           "goldCost": 2,
-          "name": "Bloodfen_Raptor",
+          "name": "Bloodfen Raptor",
           "characterType": "Card"
         }
       },
@@ -288,6 +275,19 @@
           "description": "Battlecry: Freeze an enemy",
           "goldCost": 2,
           "name": "Frozen Shadoweaver",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+        "data": {
+          "cardType": "Spell",
+          "heroClass": "Rogue",
+          "rarity": "Common",
+          "manaCost": 1,
+          "description": "Discover a weapon from any class. Add it to your Adventure Deck with +2/+2",
+          "goldCost": 2,
+          "name": "Friendly Smith",
           "characterType": "Card"
         }
       }

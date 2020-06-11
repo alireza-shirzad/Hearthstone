@@ -43,6 +43,5 @@ public class DeckButton extends MyButton {
     public void press() {
         GameState.getInstance().setCurrentDeck(simpleDeck);
         CollectionsReferences.getCurrentDeckCardsPanel().design();
-
     }
 }

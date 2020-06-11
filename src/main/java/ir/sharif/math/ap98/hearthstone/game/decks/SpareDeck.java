@@ -29,7 +29,7 @@ public class SpareDeck extends Deck {
         SpareDeck spareDeck = new SpareDeck();
         spareDeck.Add(CardFactory.getInstance().make("Abomination"));
         spareDeck.Add(CardFactory.getInstance().make("Arena Treasure Chest"));
-        spareDeck.Add(CardFactory.getInstance().make("Bloodfen_Raptor"));
+        spareDeck.Add(CardFactory.getInstance().make("Bloodfen Raptor"));
         spareDeck.Add(CardFactory.getInstance().make("Cold Blood"));
         spareDeck.Add(CardFactory.getInstance().make("Ethereal Augmerchant"));
         spareDeck.Add(CardFactory.getInstance().make("Fossilized Devilsaur"));

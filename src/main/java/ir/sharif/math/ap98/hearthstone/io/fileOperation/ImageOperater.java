@@ -34,6 +34,7 @@ public class ImageOperater {
             case CARD: return BaseAddress + "/Cards";
             case LOGO: return BaseAddress + "/Logo";
             case DECK: return BaseAddress + "/Deck";
+            case ICON: return BaseAddress + "/Icons";
             default: return null;
         }
     }
@@ -42,6 +43,7 @@ public class ImageOperater {
     public enum imageType{
         BACKGROUND,
         CARD,
+        ICON,
         DECK,
         LOGO;
     }

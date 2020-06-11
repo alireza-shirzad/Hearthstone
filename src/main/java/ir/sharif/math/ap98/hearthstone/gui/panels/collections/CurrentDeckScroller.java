@@ -7,7 +7,7 @@ import javax.swing.*;
 public class CurrentDeckScroller extends MyScroller {
     public CurrentDeckScroller(JPanel jPanel) {
         super(jPanel, "Current Deck");
-        setBounds(240,100,620,250);
+        setBounds(240,100,600,250);
         this.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         this.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
     }

@@ -7,7 +7,7 @@ import javax.swing.*;
 public class SpareCardsScroller extends MyScroller {
     public SpareCardsScroller(JPanel jPanel) {
         super(jPanel, "Spare deck");
-        setBounds(240,370,620,250);
+        setBounds(240,370,600,250);
         this.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         this.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
     }
