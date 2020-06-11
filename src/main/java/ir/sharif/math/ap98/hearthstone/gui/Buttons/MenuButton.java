@@ -3,6 +3,7 @@ package ir.sharif.math.ap98.hearthstone.gui.Buttons;
 import ir.sharif.math.ap98.hearthstone.gui.BackgroundPanel;
 import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
+import ir.sharif.math.ap98.hearthstone.gui.panels.Shop.ShopPanel;
 import ir.sharif.math.ap98.hearthstone.gui.panels.collections.CollectionsPanel;
 
 import java.awt.*;
@@ -29,7 +30,7 @@ public class MenuButton extends MyButton {
                     BackgroundPanel.getInstance().add(new CollectionsPanel());
                 break;
             case "Shop":
-
+                    BackgroundPanel.getInstance().add(new ShopPanel());
                 break;
             case "Settings":
 

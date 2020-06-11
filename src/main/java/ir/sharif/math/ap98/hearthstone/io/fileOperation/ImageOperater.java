@@ -23,6 +23,7 @@ public class ImageOperater {
             return ImageIO.read(new File(AbsoluteAddress));
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println(AbsoluteAddress);
             return null;
         }
     }

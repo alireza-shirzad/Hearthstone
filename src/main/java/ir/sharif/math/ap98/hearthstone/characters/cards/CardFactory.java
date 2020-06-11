@@ -45,7 +45,7 @@ public class CardFactory {
                 .getInstance().getAllFileNames(FileOperator.fileType.CARD);
         ArrayList<Card> AllCards = new ArrayList<>();
         for (String cardName : CardNames) {
-            AllCards.add(make(cardName));
+            AllCards.add(make(cardName.substring(0,cardName.length()-5)));
         }
         return AllCards;
     }

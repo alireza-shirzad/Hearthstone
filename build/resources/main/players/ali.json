@@ -1,7 +1,7 @@
 {
   "username": "ali",
   "passwordHash": "a5f7801d0d6839e30dc8e374c32a803271fdd6839f9828d6788e429bbc0b1cf3",
-  "gold": 50,
+  "gold": 54,
   "simpleDecks": [
     {
       "HeroType": "Mage",
@@ -192,21 +192,6 @@
       {
         "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
         "data": {
-          "attack": 0,
-          "health": 4,
-          "cardType": "Minion",
-          "heroClass": "Neutral",
-          "rarity": "Common",
-          "manaCost": 4,
-          "description": "Deathrattle: Draw 2 cards",
-          "goldCost": 2,
-          "name": "Arena Treasure Chest",
-          "characterType": "Card"
-        }
-      },
-      {
-        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-        "data": {
           "attack": 3,
           "health": 2,
           "subtype": "Beast",
@@ -275,19 +260,6 @@
           "description": "Battlecry: Freeze an enemy",
           "goldCost": 2,
           "name": "Frozen Shadoweaver",
-          "characterType": "Card"
-        }
-      },
-      {
-        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
-        "data": {
-          "cardType": "Spell",
-          "heroClass": "Rogue",
-          "rarity": "Common",
-          "manaCost": 1,
-          "description": "Discover a weapon from any class. Add it to your Adventure Deck with +2/+2",
-          "goldCost": 2,
-          "name": "Friendly Smith",
           "characterType": "Card"
         }
       }

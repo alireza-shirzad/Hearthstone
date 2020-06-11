@@ -1,6 +1,5 @@
 package ir.sharif.math.ap98.hearthstone.io.fileOperation;
 
-import ir.sharif.math.ap98.hearthstone.gui.IOConstants;
 import ir.sharif.math.ap98.hearthstone.io.confLoader.DirectoryConfigLoader;
 
 import java.io.File;
@@ -49,7 +48,7 @@ public class FileOperator {
         File[] listOfFiles = folder.listFiles();
         for (File file : listOfFiles) {
             if (file.isFile())
-                fileNames.add(file.getName());
+            fileNames.add(file.getName());
         }
         return fileNames;
     }
