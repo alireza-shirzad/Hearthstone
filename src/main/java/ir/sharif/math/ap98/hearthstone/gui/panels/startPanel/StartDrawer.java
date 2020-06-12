@@ -20,7 +20,7 @@ public class StartDrawer extends Drawer implements CanAnimate {
     private SignButton signInButton;
     public StartDrawer(StartPanel startPanel){
         super(startPanel);
-        animatedImage = ImageOperater.getInstance().Read("start.png" , ImageOperater.imageType.LOGO);
+        animatedImage = ImageOperater.getInstance().Read("Start.png" , ImageOperater.imageType.LOGO);
         animatedX = 340;
         animatedY =-100;
     }

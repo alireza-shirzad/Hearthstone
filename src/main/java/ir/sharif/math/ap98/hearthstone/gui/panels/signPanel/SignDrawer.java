@@ -1,16 +1,14 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.signPanel;
 
-import ir.sharif.math.ap98.hearthstone.gui.BackgroundPanel;
+import ir.sharif.math.ap98.hearthstone.gui.*;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.SignInCommitButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.SignUpCommitButton;
-import ir.sharif.math.ap98.hearthstone.gui.Drawer;
-import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.Header;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.Header1;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.Response;
-import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.gui.fields.MyPassField;
 import ir.sharif.math.ap98.hearthstone.gui.fields.MyTextField;
+import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 import ir.sharif.math.ap98.hearthstone.players.SignInManager;
 import sun.jvm.hotspot.debugger.ThreadAccess;
 
@@ -21,7 +19,7 @@ import java.awt.event.ActionListener;
 import java.time.chrono.Era;
 import java.util.concurrent.TimeUnit;
 
-public class SignDrawer extends Drawer {
+public class SignDrawer extends Drawer implements CanAnimate {
     private Header header;
     private Header1 usernameHeader1;
     private Header1 passwordHeader1;
@@ -30,11 +28,16 @@ public class SignDrawer extends Drawer {
     private SignInCommitButton signInCommitButton;
     private SignUpCommitButton signUpCommitButton;
     private Response responseLabel;
+    private int animatedX,animatedY;
+    private Image animatedImage;
     public SignDrawer(JPanel jPanel) {
         super(jPanel);
     }
     public void designHeader(String labelString){
         header = new Header(labelString);
+        animatedX = GUIConstants.FRAME_WIDTH;
+        animatedY = 330;
+        animatedImage = ImageOperater.getInstance().Read("Sign.png" , ImageOperater.imageType.LOGO);
         jPanel.add(header);
         MainFrame.getInstance().Update();
     }
@@ -74,5 +77,11 @@ public class SignDrawer extends Drawer {
         responseLabel = new Response(response,type);
         jPanel.add(responseLabel);
         MainFrame.getInstance().Update();
+    }
+
+    @Override
+    public void Animate(Graphics2D g2D) {
+        if(animatedX>850) animatedX = animatedX - 4;
+        g2D.drawImage(this.animatedImage,animatedX,animatedY,null);
     }
 }

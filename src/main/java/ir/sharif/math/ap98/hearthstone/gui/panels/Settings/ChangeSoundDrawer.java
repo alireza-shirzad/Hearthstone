@@ -24,5 +24,5 @@ public class ChangeSoundDrawer extends Drawer {
         title.setTitleColor(COLOR3);
         jPanel.setBorder(title);
     }
-    
+
 }
