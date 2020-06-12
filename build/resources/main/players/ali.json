@@ -1,7 +1,7 @@
 {
   "username": "ali",
   "passwordHash": "a5f7801d0d6839e30dc8e374c32a803271fdd6839f9828d6788e429bbc0b1cf3",
-  "gold": 50,
+  "gold": 48,
   "simpleDecks": [
     {
       "HeroType": "Mage",
@@ -266,21 +266,6 @@
       {
         "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
         "data": {
-          "attack": 2,
-          "durability": 2,
-          "cardType": "Weapon",
-          "heroClass": "Neutral",
-          "rarity": "Common",
-          "manaCost": 1,
-          "description": "",
-          "goldCost": 2,
-          "name": "Battle Axe",
-          "characterType": "Card"
-        }
-      },
-      {
-        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
-        "data": {
           "attack": 3,
           "durability": 8,
           "cardType": "Weapon",
@@ -290,6 +275,34 @@
           "description": "",
           "goldCost": 2,
           "name": "Blood Fury",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+        "data": {
+          "cardType": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "Rare",
+          "manaCost": 2,
+          "description": "Draw 3 cards. Discard any spells drawn",
+          "goldCost": 2,
+          "name": "Book of Specters",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
+        "data": {
+          "attack": 2,
+          "durability": 2,
+          "cardType": "Weapon",
+          "heroClass": "Neutral",
+          "rarity": "Common",
+          "manaCost": 1,
+          "description": "",
+          "goldCost": 2,
+          "name": "Battle Axe",
           "characterType": "Card"
         }
       }

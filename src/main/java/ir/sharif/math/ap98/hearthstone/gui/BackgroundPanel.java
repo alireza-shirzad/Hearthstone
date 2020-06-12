@@ -18,6 +18,17 @@ public class BackgroundPanel extends JPanel {
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(this.image, 0, 0,GUIConstants.FRAME_WIDTH , GUIConstants.FRAME_HEIGHT, null);
     }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(String imageName) {
+        image = ImageOperater.getInstance().Read(imageName
+                , ImageOperater.imageType.BACKGROUND);
+        this.image = image;
+    }
+
     //// Singletone Design
     private static BackgroundPanel backgroundPanel;
     public static BackgroundPanel getInstance() {
