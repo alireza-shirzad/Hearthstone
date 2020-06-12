@@ -1,7 +1,7 @@
 {
   "username": "ali",
   "passwordHash": "a5f7801d0d6839e30dc8e374c32a803271fdd6839f9828d6788e429bbc0b1cf3",
-  "gold": 52,
+  "gold": 48,
   "simpleDecks": [
     {
       "HeroType": "Mage",
@@ -260,6 +260,34 @@
           "description": "Battlecry: Freeze an enemy",
           "goldCost": 2,
           "name": "Frozen Shadoweaver",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
+        "data": {
+          "attack": 3,
+          "durability": 8,
+          "cardType": "Weapon",
+          "heroClass": "Warlock",
+          "rarity": "Common",
+          "manaCost": 3,
+          "description": "",
+          "goldCost": 2,
+          "name": "Blood Fury",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+        "data": {
+          "cardType": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "Rare",
+          "manaCost": 2,
+          "description": "Draw 3 cards. Discard any spells drawn",
+          "goldCost": 2,
+          "name": "Book of Specters",
           "characterType": "Card"
         }
       },

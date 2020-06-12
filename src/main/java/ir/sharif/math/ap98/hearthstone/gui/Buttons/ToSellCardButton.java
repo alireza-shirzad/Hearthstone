@@ -33,9 +33,9 @@ public class ToSellCardButton extends CardButton {
                 options[0]); //default button title
         if (n == 0) {
             Player currentPlayer = GameState.getInstance().getCurrentPlayer();
-            Deck.Result result = currentPlayer.getSpareDeck().Remove(card);
+            currentPlayer.getSpareDeck().Remove(card);
             currentPlayer.setGold(currentPlayer.getGold() + card.getGoldCost());
-            //ShopPanel.getInstance().UpdateGold();
+            ShopReferences.getGoldPanel().design();
             PlayerManager.getInstance().Save(currentPlayer);
             ShopReferences.getToSellPanel().design();
             JOptionPane.showMessageDialog(MainFrame.getInstance(),

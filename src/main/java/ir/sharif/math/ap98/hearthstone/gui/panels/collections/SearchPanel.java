@@ -1,7 +1,5 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.collections;
 
-import ir.sharif.math.ap98.hearthstone.gui.panels.MyPanel;
-
 import javax.swing.*;
 
 public class SearchPanel extends SidePanel {

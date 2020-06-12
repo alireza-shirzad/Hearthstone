@@ -11,7 +11,7 @@ public class ShopDrawer extends Drawer {
     private Header header;
     private ToBuyScroller toBuyScroller;
     private ToSellScroller toSellScroller;
-
+    private GoldPanel goldPanel;
     public ShopDrawer(JPanel jPanel) {
         super(jPanel);
     }
@@ -28,5 +28,9 @@ public class ShopDrawer extends Drawer {
     public void designToBuyPanel(){
         toBuyScroller = new ToBuyScroller(new ToBuyPanel());
         jPanel.add(toBuyScroller);
+    }
+    public void designGoldPanel(){
+         goldPanel = new GoldPanel();
+        jPanel.add(goldPanel);
     }
 }

@@ -4,9 +4,7 @@ import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.game.GameState;
 import ir.sharif.math.ap98.hearthstone.game.decks.Deck;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
-import ir.sharif.math.ap98.hearthstone.gui.panels.Shop.ShopPanel;
 import ir.sharif.math.ap98.hearthstone.gui.panels.Shop.ShopReferences;
-import ir.sharif.math.ap98.hearthstone.gui.panels.Shop.ToSellPanel;
 import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 import ir.sharif.math.ap98.hearthstone.players.Player;
 import ir.sharif.math.ap98.hearthstone.players.PlayerManager;
@@ -34,9 +32,9 @@ public class ToBuyCardButton extends CardButton {
         if (n==0) {
             Player currentPlayer = GameState.getInstance().getCurrentPlayer();
             if (currentPlayer.getGold()>=card.getGoldCost()){
-                Deck.Result result = currentPlayer.getSpareDeck().Add(card);
+                currentPlayer.getSpareDeck().Add(card);
                 currentPlayer.setGold(currentPlayer.getGold()-card.getGoldCost());
-                //ShopPanel.getInstance().UpdateGold();
+                ShopReferences.getGoldPanel().design();
                 ShopReferences.getToSellPanel().design();
                 PlayerManager.getInstance().Save(currentPlayer);
                 JOptionPane.showMessageDialog(MainFrame.getInstance(),

@@ -2,8 +2,6 @@ package ir.sharif.math.ap98.hearthstone.gui.panels.Shop;
 
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.gui.panels.MyPanel;
-import ir.sharif.math.ap98.hearthstone.gui.panels.collections.CollectionsReferences;
-import ir.sharif.math.ap98.hearthstone.gui.panels.collections.CurrentDeckCardsDrawer;
 
 import java.awt.*;
 

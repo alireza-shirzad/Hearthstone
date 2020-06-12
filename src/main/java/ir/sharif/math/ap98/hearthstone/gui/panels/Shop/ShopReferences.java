@@ -9,6 +9,15 @@ public class ShopReferences {
 
     private static ToBuyPanel toBuyPanel;
     private static ToSellPanel toSellPanel;
+    private static GoldPanel goldPanel;
+
+    public static GoldPanel getGoldPanel() {
+        return goldPanel;
+    }
+
+    public static void setGoldPanel(GoldPanel goldPanel) {
+        ShopReferences.goldPanel = goldPanel;
+    }
 
     public static ToBuyPanel getToBuyPanel() {
         return toBuyPanel;

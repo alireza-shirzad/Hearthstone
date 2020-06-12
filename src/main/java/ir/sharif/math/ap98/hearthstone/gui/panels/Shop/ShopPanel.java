@@ -14,5 +14,6 @@ public class ShopPanel extends MyPanel {
         drawer.designHeader("Shop");
         drawer.designToSellPanel();
         drawer.designToBuyPanel();
+        drawer.designGoldPanel();
     }
 }
