@@ -34,14 +34,14 @@ public class PassiveButton extends MyButton {
             }
         });
         Image img = ImageOperater.getInstance().Read(passive.getName() + ".png"
-                , ImageOperater.imageType.CARD);
+                , ImageOperater.imageType.PASSIVE);
         Image newimg = img.getScaledInstance( w, h,  java.awt.Image.SCALE_SMOOTH ) ;
         this.setIcon(new ImageIcon(newimg));
     }
 
     @Override
     public void press() {
-        //GameState.getInstance().setPassive(passive);
+        GameState.getInstance().setPassive(passive);
         JOptionPane.showMessageDialog(MainFrame.getInstance(),
                 "Special power added",
                 "Special power",

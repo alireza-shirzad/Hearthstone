@@ -18,6 +18,7 @@ public class PrePlayPanel extends MyPanel {
     @Override
     public void design() {
         startAnimation();
+        drawer.desingPassivePanel();
     }
     private void startAnimation(){
         timer = new Timer(GUIConstants.RENDERING_SPEED, e -> {

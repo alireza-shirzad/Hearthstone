@@ -42,7 +42,8 @@ public class PrePlayDrawer extends Drawer implements CanAnimate {
     }
 
     public void desingPassivePanel(){
-
+        passivePanel = new PassivePanel();
+        jPanel.add(passivePanel);
     }
     public void designHandChoosePanel(){
 

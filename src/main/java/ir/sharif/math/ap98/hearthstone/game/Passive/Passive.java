@@ -1,28 +1,33 @@
 package ir.sharif.math.ap98.hearthstone.game.Passive;
 
-public class Passive {
+import java.util.ArrayList;
 
-    public Passive(String name, String description) {
+public class Passive {
+    public static final int numOfPassives = 5;
+    public final static ArrayList<Passive> passives = new ArrayList<>();
+    static {
+        passives.add(new FreePower());
+        passives.add(new ManaJump());
+        passives.add(new OffCards());
+        passives.add(new TwiceDraw());
+        passives.add(new Warriors());
+    }
+    private String name;
+    public Passive(String name) {
         this.name = name;
-        Description = description;
     }
 
-    private String name;
-    private String Description;
-
+    public static ArrayList<Passive> getPassives() {
+        return passives;
+    }
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getDescription() {
-        return Description;
+    public static int getNumOfPassives() {
+        return numOfPassives;
     }
 
-    public void setDescription(String description) {
-        Description = description;
-    }
 }
