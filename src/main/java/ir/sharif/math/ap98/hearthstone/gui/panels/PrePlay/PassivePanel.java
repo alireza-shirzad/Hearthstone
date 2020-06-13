@@ -10,7 +10,7 @@ public class PassivePanel extends MyPanel {
         drawer = new PassiveDrawer(this);
         PrePlayRefrences.setPassivePanel(this);
         setLayout(new FlowLayout(FlowLayout.CENTER));
-        setBounds(250,60,600,250);
+        setBounds(30,80,600,250);
         design();
     }
     @Override

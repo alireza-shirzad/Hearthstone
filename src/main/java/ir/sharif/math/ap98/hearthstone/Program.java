@@ -17,7 +17,7 @@ public class Program {
     }
     private static void run(){
         GameState.getInstance().setCurrentPlayer(PlayerManager.getInstance().Load("ali"));
-        BackgroundPanel.getInstance().add(new PrePlayPanel());
+        BackgroundPanel.getInstance().add(new MenuPanel());
         MainFrame.getInstance().add(BackgroundPanel.getInstance(), BorderLayout.CENTER);
     }
 }

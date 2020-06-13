@@ -22,7 +22,7 @@ public class PassiveDrawer extends Drawer {
     }
     public void drawPassives(){
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 1; i<= Passive.numOfPassives; i++) {
+        for (int i = 0; i<= Passive.numOfPassives-1; i++) {
             list.add(i);
         }
         Collections.shuffle(list);

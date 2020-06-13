@@ -1,16 +1,19 @@
 package ir.sharif.math.ap98.hearthstone.game;
 
+import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.game.Passive.Passive;
 import ir.sharif.math.ap98.hearthstone.game.decks.SimpleDeck;
 import ir.sharif.math.ap98.hearthstone.gui.BackgroundPanel;
 import ir.sharif.math.ap98.hearthstone.players.Player;
+
+import java.util.ArrayList;
 
 public class GameState {
     private Player currentPlayer;
     private SimpleDeck currentDeck;
     private SimpleDeck playDeck;
     private Passive passive;
-
+    private Hand hand;
     public void initiatePlayDeck(){
         try {
             playDeck = (SimpleDeck) currentDeck.clone();
@@ -19,6 +22,12 @@ public class GameState {
         }
     }
 
+    public Hand getHand() {
+        return hand;
+    }
+    public void setHand(Hand hand) {
+        this.hand = hand;
+    }
     public Passive getPassive() {
         return passive;
     }
