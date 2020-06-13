@@ -15,6 +15,7 @@ public class SettingsPanel extends MyPanel {
         drawer.designHeader("Settings");
         drawer.designChangeBGPanel();
         drawer.designChangeSoundPanel();
+        drawer.designBackButton();
         MainFrame.getInstance().Update();
     }
 }

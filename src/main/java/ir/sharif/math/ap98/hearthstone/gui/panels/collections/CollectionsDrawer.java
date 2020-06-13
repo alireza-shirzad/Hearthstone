@@ -1,5 +1,6 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.collections;
 
+import ir.sharif.math.ap98.hearthstone.gui.Buttons.BackButton;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.Header;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
@@ -13,6 +14,7 @@ public class CollectionsDrawer extends Drawer {
     private SpareCardsScroller spareCardsScroller;
     private CurrentDeckScroller currentDeckScroller;
     private SearchPanel searchPanel;
+    private BackButton backButton;
     public CollectionsDrawer(JPanel jPanel) {
         super(jPanel);
     }
@@ -37,6 +39,10 @@ public class CollectionsDrawer extends Drawer {
     public void designSearchPanel(){
         searchPanel = new SearchPanel();
         jPanel.add(searchPanel);
+    }
+    public void designBackButton(){
+        backButton = new BackButton();
+        jPanel.add(backButton);
     }
 
 

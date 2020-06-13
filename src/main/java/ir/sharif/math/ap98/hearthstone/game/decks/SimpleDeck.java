@@ -4,7 +4,7 @@ import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.characters.cards.CardFactory;
 import ir.sharif.math.ap98.hearthstone.characters.heros.Hero;
 
-public class SimpleDeck extends Deck {
+public class SimpleDeck extends Deck implements Cloneable {
 
     public static final int DeckCapacity = 20;
     public static final int DeckLimit = 2;
@@ -117,6 +117,11 @@ public class SimpleDeck extends Deck {
             default:
                 return null;
         }
+    }
+
+
+    public Object clone()throws CloneNotSupportedException{
+        return super.clone();
     }
 
 }

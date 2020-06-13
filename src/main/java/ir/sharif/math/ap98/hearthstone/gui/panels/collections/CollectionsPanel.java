@@ -16,6 +16,7 @@ public class CollectionsPanel extends MyPanel {
         drawer.designCurrentDeckCards();
         drawer.designSpareCardsPanel();
         drawer.designSearchPanel();
+        drawer.designBackButton();
         MainFrame.getInstance().Update();
     }
 }

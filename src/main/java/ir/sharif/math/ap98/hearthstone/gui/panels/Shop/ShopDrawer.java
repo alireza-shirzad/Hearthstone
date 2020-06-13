@@ -1,5 +1,6 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.Shop;
 
+import ir.sharif.math.ap98.hearthstone.gui.Buttons.BackButton;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.Header;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
@@ -12,6 +13,7 @@ public class ShopDrawer extends Drawer {
     private ToBuyScroller toBuyScroller;
     private ToSellScroller toSellScroller;
     private GoldPanel goldPanel;
+    private BackButton backButton;
     public ShopDrawer(JPanel jPanel) {
         super(jPanel);
     }
@@ -32,5 +34,9 @@ public class ShopDrawer extends Drawer {
     public void designGoldPanel(){
          goldPanel = new GoldPanel();
         jPanel.add(goldPanel);
+    }
+    public void designBackButton(){
+        backButton = new BackButton();
+        jPanel.add(backButton);
     }
 }
