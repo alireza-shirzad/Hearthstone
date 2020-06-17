@@ -99,6 +99,51 @@
             "name": "Frozen Shadoweaver",
             "characterType": "Card"
           }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 8,
+            "health": 8,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Rare",
+            "manaCost": 8,
+            "description": "Battlecry: If you control a Beast, gain Taunt",
+            "goldCost": 2,
+            "name": "Fossilized Devilsaur",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
+          "data": {
+            "attack": 2,
+            "durability": 2,
+            "cardType": "Weapon",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 1,
+            "description": "",
+            "goldCost": 2,
+            "name": "Battle Axe",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 2,
+            "health": 1,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 1,
+            "description": "Battlecry: Deal 1 damage to a minion and give it Spell Damage +1",
+            "goldCost": 2,
+            "name": "Ethereal Augmerchant",
+            "characterType": "Card"
+          }
         }
       ]
     },
@@ -234,36 +279,6 @@
   "spareDeck": {
     "Cards": [
       {
-        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-        "data": {
-          "attack": 2,
-          "health": 1,
-          "cardType": "Minion",
-          "heroClass": "Neutral",
-          "rarity": "Common",
-          "manaCost": 1,
-          "description": "Battlecry: Deal 1 damage to a minion and give it Spell Damage +1",
-          "goldCost": 2,
-          "name": "Ethereal Augmerchant",
-          "characterType": "Card"
-        }
-      },
-      {
-        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-        "data": {
-          "attack": 8,
-          "health": 8,
-          "cardType": "Minion",
-          "heroClass": "Neutral",
-          "rarity": "Rare",
-          "manaCost": 8,
-          "description": "Battlecry: If you control a Beast, gain Taunt",
-          "goldCost": 2,
-          "name": "Fossilized Devilsaur",
-          "characterType": "Card"
-        }
-      },
-      {
         "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
         "data": {
           "attack": 3,
@@ -275,21 +290,6 @@
           "description": "",
           "goldCost": 2,
           "name": "Blood Fury",
-          "characterType": "Card"
-        }
-      },
-      {
-        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
-        "data": {
-          "attack": 2,
-          "durability": 2,
-          "cardType": "Weapon",
-          "heroClass": "Neutral",
-          "rarity": "Common",
-          "manaCost": 1,
-          "description": "",
-          "goldCost": 2,
-          "name": "Battle Axe",
           "characterType": "Card"
         }
       },

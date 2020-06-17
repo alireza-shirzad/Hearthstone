@@ -1,6 +1,7 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.PrePlay;
 
 import ir.sharif.math.ap98.hearthstone.game.GameState;
+import ir.sharif.math.ap98.hearthstone.game.Hand;
 import ir.sharif.math.ap98.hearthstone.game.Passive.Passive;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.HandChooseCardButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.PassiveButton;
@@ -24,14 +25,16 @@ public class HandChooseDrawer extends Drawer {
     }
     public void designHand(){
         GameState.getInstance().initiatePlayDeck();
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i<= GameState.getInstance().getPlayDeck().getNumOfTotallCards()-1; i++) {
-            list.add(i);
-        }
-        Collections.shuffle(list);
+        GameState.getInstance().setHand(new Hand());
         for (int i=0; i<3; i++) {
-            jPanel.add(new HandChooseCardButton(GameState.getInstance().getCurrentDeck()
-                    .getCards().get(list.get(i)),150,200));
+            jPanel.add(new HandChooseCardButton(GameState.getInstance()
+                    .getHand().getCards().get(i),150,200));
+        }
+    }
+    public void drawHand(){
+        for (int i=0; i<3; i++) {
+            jPanel.add(new HandChooseCardButton(GameState.getInstance()
+                    .getHand().getCards().get(i),150,200));
         }
     }
     public void designBorder(String name){

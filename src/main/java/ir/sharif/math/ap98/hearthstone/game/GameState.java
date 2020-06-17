@@ -14,6 +14,8 @@ public class GameState {
     private SimpleDeck playDeck;
     private Passive passive;
     private Hand hand;
+    private boolean canChangeHand;
+
     public void initiatePlayDeck(){
         try {
             playDeck = (SimpleDeck) currentDeck.clone();
@@ -58,7 +60,12 @@ public class GameState {
     public void setCurrentDeck(SimpleDeck currentDeck) {
         this.currentDeck = currentDeck;
     }
-
+    public boolean isCanChangeHand() {
+        return canChangeHand;
+    }
+    public void setCanChangeHand(boolean canChangeHand) {
+        this.canChangeHand = canChangeHand;
+    }
 
     //// Singletone Design
     private static GameState gameState;

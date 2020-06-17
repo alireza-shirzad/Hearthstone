@@ -11,6 +11,7 @@ public class PassivePanel extends MyPanel {
         PrePlayRefrences.setPassivePanel(this);
         setLayout(new FlowLayout(FlowLayout.CENTER));
         setBounds(30,80,600,250);
+        PrePlayRefrences.setPassivePanel(this);
         design();
     }
     @Override

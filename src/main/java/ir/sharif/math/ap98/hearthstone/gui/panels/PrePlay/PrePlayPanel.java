@@ -20,6 +20,7 @@ public class PrePlayPanel extends MyPanel {
         startAnimation();
         drawer.desingPassivePanel();
         drawer.designHandChoosePanel();
+        drawer.designPlayButton();
     }
     private void startAnimation(){
         timer = new Timer(GUIConstants.RENDERING_SPEED, e -> {
@@ -33,6 +34,5 @@ public class PrePlayPanel extends MyPanel {
         Graphics2D g2D = (Graphics2D)g;
         drawer.drawMonster(g2D);
         drawer.Animate(g2D);
-        drawer.designPlayButton();
     }
 }
