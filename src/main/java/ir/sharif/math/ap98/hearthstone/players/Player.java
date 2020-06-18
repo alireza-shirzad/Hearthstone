@@ -8,7 +8,7 @@ import ir.sharif.math.ap98.hearthstone.game.decks.SpareDeck;
 import java.util.ArrayList;
 
 
-public class Player {
+public class Player implements Cloneable {
     public String username;
     public String passwordHash;
     public int gold;
@@ -73,6 +73,9 @@ public class Player {
         }
         totallCards.addAll(spareDeck.getCards());
         return totallCards;
+    }
+    public Object clone()throws CloneNotSupportedException{
+        return super.clone();
     }
 
 }

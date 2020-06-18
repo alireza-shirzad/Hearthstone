@@ -1,6 +1,11 @@
 package ir.sharif.math.ap98.hearthstone.gui.Buttons;
 
+import ir.sharif.math.ap98.hearthstone.game.GameEntity;
+import ir.sharif.math.ap98.hearthstone.game.MatchState;
+import ir.sharif.math.ap98.hearthstone.gui.BackgroundPanel;
 import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
+import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
+import ir.sharif.math.ap98.hearthstone.gui.panels.Play.PlayPanel;
 import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 
 import javax.swing.*;
@@ -30,6 +35,9 @@ public class PlayButton extends MyButton {
 
     @Override
     public void press() {
-
+        MatchState.createMatch();
+        BackgroundPanel.getInstance().removeAll();
+        BackgroundPanel.getInstance().add(new PlayPanel());
+        MainFrame.getInstance().Update();
     }
 }

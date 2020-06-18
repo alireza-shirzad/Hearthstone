@@ -11,6 +11,7 @@ public final class GUIConstants {
         public static final int RENDERING_SPEED;
         public static final String GAME_TITLE;
         public static final String DEFAULTBACKGROUND_ADDRESS;
+        public static final String DEFAULTPLAYBACKGROUND_ADDRESS;
         public static final String HEADER_FONT_NAME;
         public static final int HEADER_FONT_SIZE;
         public static final String HEADER1_FONT_NAME;
@@ -26,6 +27,7 @@ public final class GUIConstants {
             RENDERING_SPEED = Integer.valueOf(GraphicConfigLoader.getInstance().getPropVal("renderingSpeed"));
             GAME_TITLE = GraphicConfigLoader.getInstance().getPropVal("gameTitle");
             DEFAULTBACKGROUND_ADDRESS = GraphicConfigLoader.getInstance().getPropVal("defaultBackgroundAddress");
+            DEFAULTPLAYBACKGROUND_ADDRESS= GraphicConfigLoader.getInstance().getPropVal("defaultPlayBackgroundAddress");
             COLOR1 = new Color(38,42,54);
             COLOR2 = new Color(176, 177, 171);
             COLOR3 = new Color(94,98,109);
@@ -36,6 +38,5 @@ public final class GUIConstants {
             HEADER_FONT_SIZE = 90;
             HEADER1_FONT_SIZE = 40;
         }
-
 
 }

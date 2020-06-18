@@ -36,6 +36,7 @@ public class ImageOperater {
             case LOGO: return BaseAddress + "/Logo";
             case DECK: return BaseAddress + "/Deck";
             case ICON: return BaseAddress + "/Icons";
+            case HERO: return BaseAddress + "/Heros";
             case PASSIVE: return BaseAddress + "/Passives";
             default: return null;
         }
@@ -47,6 +48,7 @@ public class ImageOperater {
         PASSIVE,
         ICON,
         DECK,
+        HERO,
         LOGO;
     }
 

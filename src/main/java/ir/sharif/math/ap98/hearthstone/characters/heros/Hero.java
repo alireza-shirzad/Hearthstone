@@ -1,6 +1,6 @@
 package ir.sharif.math.ap98.hearthstone.characters.heros;
 import ir.sharif.math.ap98.hearthstone.characters.Character;
-public class Hero extends Character {
+public class Hero extends Character implements Cloneable {
 
     //// Attributes
     private int HP;
@@ -19,10 +19,22 @@ public class Hero extends Character {
     public int getHP() {
         return HP;
     }
-
     public void setHP(int HP) {
         this.HP = HP;
     }
+    public Type getHeroType() {
+        return HeroType;
+    }
+    public void setHeroType(Type heroType) {
+        HeroType = heroType;
+    }
+
+
+    public Object clone()throws CloneNotSupportedException{
+        return super.clone();
+    }
+
+
 
     //// Hero Types
     public enum Type{

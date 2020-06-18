@@ -2,7 +2,7 @@ package ir.sharif.math.ap98.hearthstone.game.Passive;
 
 import java.util.ArrayList;
 
-public class Passive {
+public class Passive implements Cloneable {
     public static final int numOfPassives = 5;
     public final static ArrayList<Passive> passives = new ArrayList<>();
     static {
@@ -29,5 +29,10 @@ public class Passive {
     public static int getNumOfPassives() {
         return numOfPassives;
     }
+
+    public Object clone()throws CloneNotSupportedException{
+        return super.clone();
+    }
+
 
 }
