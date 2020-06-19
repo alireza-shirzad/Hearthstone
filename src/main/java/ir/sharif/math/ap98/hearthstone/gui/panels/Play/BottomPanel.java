@@ -21,5 +21,6 @@ public class BottomPanel extends MyPanel {
     public void design() {
         drawer.drawHeroLabel();
         drawer.drawHeroPowerButton();
+        drawer.drawshowHandButton();
     }
 }

@@ -12,7 +12,7 @@ public class UpPanel extends MyPanel {
 
     public UpPanel(){
         drawer = new UpDrawer(this);
-        this.setBounds(0,10,1090,330);
+        this.setBounds(0,30,1090,330);
         BackgroundPanel.getInstance().setImage(GUIConstants.DEFAULTPLAYBACKGROUND_ADDRESS);
         design();
     }
@@ -20,5 +20,6 @@ public class UpPanel extends MyPanel {
     public void design() {
         drawer.drawHeroLabel();
         drawer.drawHeroPowerButton();
+        drawer.drawshowHandButton();
     }
 }
