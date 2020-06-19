@@ -20,6 +20,7 @@ public class PlayPanel extends MyPanel {
     public void design() {
         drawer.drawNextRoundButton();
         drawer.drawBottomPanel();
+        drawer.drawUpPanel();
     }
 
 }

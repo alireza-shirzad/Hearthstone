@@ -15,6 +15,12 @@ public class BottomDrawer extends Drawer {
     }
     public void drawHeroLabel(){
         heroLabel = new HeroLabel(MatchState.get().getMyEntity().getHero());
+        heroLabel.setBounds(160,170,130,150);
         jPanel.add(heroLabel);
+    }
+    public void drawHeroPowerButton(){
+        heroPowerButton = new HeroPowerButton(MatchState.get().getMyEntity().getHero());
+        heroPowerButton.setBounds(62,220,90,80);
+        jPanel.add(heroPowerButton);
     }
 }

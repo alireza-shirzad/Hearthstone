@@ -14,7 +14,6 @@ public class NextRoundButton extends MyButton {
         this.setHorizontalAlignment(CENTER);
         this.setVerticalAlignment(CENTER);
         this.setForeground(Color.BLACK);
-        this.setBorderPainted(true);
         this.setContentAreaFilled(false);
         this.requestFocus();
         this.setOpaque(false);

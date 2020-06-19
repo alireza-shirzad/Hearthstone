@@ -15,11 +15,9 @@ public class PlayButton extends MyButton {
     public PlayButton() {
         super("");
         setBounds(695,460,300,180);
-        this.setBorder(BorderFactory.createBevelBorder(2));
         this.setHorizontalAlignment(CENTER);
         this.setVerticalAlignment(CENTER);
         this.setForeground(Color.BLACK);
-        this.setBorderPainted(true);
         this.setContentAreaFilled(false);
         this.requestFocus();
         this.setOpaque(false);
