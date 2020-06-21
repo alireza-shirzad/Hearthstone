@@ -15,6 +15,7 @@ public class BottomPanel extends MyPanel {
         drawer = new BottomDrawer(this);
         this.setBounds(0,330,1090,330);
         BackgroundPanel.getInstance().setImage(GUIConstants.DEFAULTPLAYBACKGROUND_ADDRESS);
+        PlayRefrences.setBottomPanel(this);
         design();
     }
     @Override
@@ -22,5 +23,12 @@ public class BottomPanel extends MyPanel {
         drawer.drawHeroLabel();
         drawer.drawHeroPowerButton();
         drawer.drawshowHandButton();
+    }
+
+    public BottomDrawer getDrawer() {
+        return drawer;
+    }
+    public void setDrawer(BottomDrawer drawer) {
+        this.drawer = drawer;
     }
 }

@@ -1,19 +1,25 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.Play;
 
+import ir.sharif.math.ap98.hearthstone.game.Hand;
 import ir.sharif.math.ap98.hearthstone.game.MatchState;
+import ir.sharif.math.ap98.hearthstone.gui.Buttons.HandCardButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.HeroPowerButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.ShowHandButton;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.HeroLabel;
+import ir.sharif.math.ap98.hearthstone.gui.dialogs.HandDialog;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class BottomDrawer extends Drawer {
+    private JDialog handDialog;
     private HeroLabel heroLabel;
     private HeroPowerButton heroPowerButton;
     private ShowHandButton showHandButton;
     public BottomDrawer(JPanel jPanel) {
         super(jPanel);
+
     }
     public void drawHeroLabel(){
         heroLabel = new HeroLabel(MatchState.get().getMyEntity().getHero());
@@ -26,8 +32,13 @@ public class BottomDrawer extends Drawer {
         jPanel.add(heroPowerButton);
     }
     public void drawshowHandButton(){
-        showHandButton = new ShowHandButton();
+        showHandButton = new ShowHandButton(MatchState.EntityType.MY_ENTITY);
         showHandButton.setBounds(915,252,130,50);
         jPanel.add(showHandButton);
+    }
+    public void drawHandDialogue(){
+        if (handDialog!=null) handDialog.dispose();
+        Hand hand = MatchState.get().getMyEntity().getHand();
+        handDialog = new HandDialog(hand);
     }
 }

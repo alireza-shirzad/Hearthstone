@@ -1,27 +1,74 @@
 package ir.sharif.math.ap98.hearthstone.game;
 
+import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.characters.heros.Hero;
 import ir.sharif.math.ap98.hearthstone.game.Passive.Passive;
 import ir.sharif.math.ap98.hearthstone.game.decks.SimpleDeck;
 import ir.sharif.math.ap98.hearthstone.players.Player;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class GameEntity {
     private Player player;
+    private MatchState.EntityType type;
     private Hand hand;
+    private ArrayList<Card> middleCards;
     private Hero hero;
     private SimpleDeck deck;
     private Passive passive;
-    public GameEntity(Player player, Hand hand, SimpleDeck deck, Hero hero) {
+    private int numOfMana;
+    private int numOfTurn;
+
+    public GameEntity(Player player, Hand hand, SimpleDeck deck, Hero hero, MatchState.EntityType type) {
         this.player = player;
         this.hand = hand;
         this.deck = deck;
         this.hero = hero;
+        this.type = type;
     }
-    public GameEntity(Player player, Hand hand, SimpleDeck deck, Passive passive, Hero hero) {
-        this(player, hand, deck, hero);
+    public GameEntity(Player player, Hand hand, SimpleDeck deck, Passive passive, Hero hero, MatchState.EntityType type) {
+        this(player, hand, deck, hero, type);
         this.passive = passive;
     }
+    public void drawCard(){
+        if(deck.getCards().size()>0) {
+            Random random = new Random(System.nanoTime());
+            int ind = random.nextInt(deck.getCards().size());
+            Card card = deck.getCards().get(ind);
+            hand.add(card);
+            deck.Remove(card);
+        }
+    }
 
+    public void playCard(Card card){
+        if(card.getCardType()== Card.Type.Minion & middleCards.size()>=7){
+            //TODO
+        }else {
+            middleCards.add(card);
+            hand.remove(card);
+            numOfMana = getNumOfMana() - card.getManaCost();
+        }
+    }
+
+    public void nextTurn(){
+        numOfTurn++;
+        setNumOfMana(numOfTurn);
+        drawCard();
+    }
+
+    public int getNumOfTurn() {
+        return numOfTurn;
+    }
+    public void setNumOfTurn(int numOfTurn) {
+        this.numOfTurn = numOfTurn;
+    }
+    public ArrayList<Card> getMiddleCards() {
+        return middleCards;
+    }
+    public void setMiddleCards(ArrayList<Card> middleCards) {
+        this.middleCards = middleCards;
+    }
     public Hero getHero() {
         return hero;
     }
@@ -51,5 +98,11 @@ public class GameEntity {
     }
     public void setPassive(Passive passive) {
         this.passive = passive;
+    }
+    public int getNumOfMana() {
+        return numOfMana;
+    }
+    public void setNumOfMana(int numOfMana) {
+        if (numOfMana<=10) this.numOfMana = numOfMana;
     }
 }

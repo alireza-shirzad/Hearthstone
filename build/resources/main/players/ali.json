@@ -73,34 +73,6 @@
           }
         },
         {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
-          "data": {
-            "cardType": "Spell",
-            "heroClass": "Neutral",
-            "rarity": "Rare",
-            "manaCost": 2,
-            "description": "Draw 3 cards. Discard any spells drawn",
-            "goldCost": 2,
-            "name": "Book of Specters",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-          "data": {
-            "attack": 4,
-            "health": 3,
-            "cardType": "Minion",
-            "heroClass": "Neutral",
-            "rarity": "Common",
-            "manaCost": 3,
-            "description": "Battlecry: Freeze an enemy",
-            "goldCost": 2,
-            "name": "Frozen Shadoweaver",
-            "characterType": "Card"
-          }
-        },
-        {
           "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
           "data": {
             "attack": 8,
@@ -112,21 +84,6 @@
             "description": "Battlecry: If you control a Beast, gain Taunt",
             "goldCost": 2,
             "name": "Fossilized Devilsaur",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
-          "data": {
-            "attack": 2,
-            "durability": 2,
-            "cardType": "Weapon",
-            "heroClass": "Neutral",
-            "rarity": "Common",
-            "manaCost": 1,
-            "description": "",
-            "goldCost": 2,
-            "name": "Battle Axe",
             "characterType": "Card"
           }
         },
@@ -234,6 +191,49 @@
             "description": "Destroy a random enemy minion",
             "goldCost": 2,
             "name": "Deadly Shot",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+          "data": {
+            "cardType": "Spell",
+            "heroClass": "Neutral",
+            "rarity": "Rare",
+            "manaCost": 2,
+            "description": "Draw 3 cards. Discard any spells drawn",
+            "goldCost": 2,
+            "name": "Book of Specters",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
+          "data": {
+            "attack": 2,
+            "durability": 2,
+            "cardType": "Weapon",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 1,
+            "description": "",
+            "goldCost": 2,
+            "name": "Battle Axe",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 4,
+            "health": 3,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 3,
+            "description": "Battlecry: Freeze an enemy",
+            "goldCost": 2,
+            "name": "Frozen Shadoweaver",
             "characterType": "Card"
           }
         }

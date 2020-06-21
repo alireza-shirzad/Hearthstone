@@ -52,4 +52,7 @@ public class Hand implements Cloneable {
     public Object clone()throws CloneNotSupportedException{
         return super.clone();
     }
+    public int getSize(){
+        return cards.size();
+    }
 }
