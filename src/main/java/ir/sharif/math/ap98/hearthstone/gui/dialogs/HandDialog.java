@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class HandDialog extends JDialog {
-    public HandDialog(Hand hand){
+    public HandDialog(Hand hand, MatchState.EntityType type){
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         this.setLayout(new FlowLayout(FlowLayout.CENTER));
@@ -24,7 +24,7 @@ public class HandDialog extends JDialog {
         this.setPreferredSize(new Dimension(w,h));
         Container pane = this.getContentPane();
         for (int i = 0; i <hand.getSize() ; i++) {
-            HandCardButton cardButton = new HandCardButton(hand.getCards().get(i));
+            HandCardButton cardButton = new HandCardButton(hand.getCards().get(i),type);
             pane.add(cardButton);
         }
         this.pack();

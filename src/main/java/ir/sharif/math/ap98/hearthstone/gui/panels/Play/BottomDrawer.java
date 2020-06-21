@@ -17,9 +17,9 @@ public class BottomDrawer extends Drawer {
     private HeroLabel heroLabel;
     private HeroPowerButton heroPowerButton;
     private ShowHandButton showHandButton;
+    private MyManaPanel myManaPanel;
     public BottomDrawer(JPanel jPanel) {
         super(jPanel);
-
     }
     public void drawHeroLabel(){
         heroLabel = new HeroLabel(MatchState.get().getMyEntity().getHero());
@@ -39,6 +39,42 @@ public class BottomDrawer extends Drawer {
     public void drawHandDialogue(){
         if (handDialog!=null) handDialog.dispose();
         Hand hand = MatchState.get().getMyEntity().getHand();
-        handDialog = new HandDialog(hand);
+        handDialog = new HandDialog(hand, MatchState.EntityType.MY_ENTITY);
+    }
+    public void drawMana(){
+        if(myManaPanel!=null) jPanel.remove(myManaPanel);
+        myManaPanel = new MyManaPanel();
+        jPanel.add(myManaPanel);
+    }
+
+    public JDialog getHandDialog() {
+        return handDialog;
+    }
+    public void setHandDialog(JDialog handDialog) {
+        this.handDialog = handDialog;
+    }
+    public HeroLabel getHeroLabel() {
+        return heroLabel;
+    }
+    public void setHeroLabel(HeroLabel heroLabel) {
+        this.heroLabel = heroLabel;
+    }
+    public HeroPowerButton getHeroPowerButton() {
+        return heroPowerButton;
+    }
+    public void setHeroPowerButton(HeroPowerButton heroPowerButton) {
+        this.heroPowerButton = heroPowerButton;
+    }
+    public ShowHandButton getShowHandButton() {
+        return showHandButton;
+    }
+    public void setShowHandButton(ShowHandButton showHandButton) {
+        this.showHandButton = showHandButton;
+    }
+    public MyManaPanel getMyManaPanel() {
+        return myManaPanel;
+    }
+    public void setMyManaPanel(MyManaPanel myManaPanel) {
+        this.myManaPanel = myManaPanel;
     }
 }

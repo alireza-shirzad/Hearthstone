@@ -40,7 +40,7 @@ public class UpDrawer extends Drawer {
     public void drawHandDialogue(){
         if (handDialog!=null) handDialog.dispose();
         Hand hand = MatchState.get().getOponentEntity().getHand();
-        handDialog = new HandDialog(hand);
+        handDialog = new HandDialog(hand, MatchState.EntityType.OPONENT_ENTITY);
     }
 
 }

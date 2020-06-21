@@ -1,6 +1,8 @@
 package ir.sharif.math.ap98.hearthstone.gui.Buttons;
 
+import ir.sharif.math.ap98.hearthstone.game.MatchState;
 import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
+import ir.sharif.math.ap98.hearthstone.gui.panels.Play.PlayRefrences;
 import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 
 import javax.swing.*;
@@ -33,7 +35,11 @@ public class NextRoundButton extends MyButton {
 
     @Override
     public void press() {
-
+        MatchState.get().getMyEntity().nextTurn();
+        PlayRefrences.getBottomPanel().getDrawer().drawMana();
+        //DesignHand();
+        if (PlayRefrences.getBottomPanel().getDrawer().getHandDialog() !=null)
+            PlayRefrences.getBottomPanel().getDrawer().getHandDialog().dispose();
     }
 
 }

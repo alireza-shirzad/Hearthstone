@@ -19,6 +19,7 @@ public class UpPanel extends MyPanel {
         drawer.drawHeroLabel();
         drawer.drawHeroPowerButton();
         drawer.drawshowHandButton();
+        //drawer.drawMana();
     }
 
     public UpDrawer getDrawer() {
