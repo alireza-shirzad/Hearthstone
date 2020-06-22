@@ -4,6 +4,7 @@ import ir.sharif.math.ap98.hearthstone.game.Hand;
 import ir.sharif.math.ap98.hearthstone.game.MatchState;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.HandCardButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.HeroPowerButton;
+import ir.sharif.math.ap98.hearthstone.gui.Buttons.MyNextRoundButton;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.ShowHandButton;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.HeroLabel;
@@ -18,6 +19,7 @@ public class BottomDrawer extends Drawer {
     private HeroPowerButton heroPowerButton;
     private ShowHandButton showHandButton;
     private MyManaPanel myManaPanel;
+    private MyNextRoundButton myNextRoundButton;
     public BottomDrawer(JPanel jPanel) {
         super(jPanel);
     }
@@ -45,6 +47,10 @@ public class BottomDrawer extends Drawer {
         if(myManaPanel!=null) jPanel.remove(myManaPanel);
         myManaPanel = new MyManaPanel();
         jPanel.add(myManaPanel);
+    }
+    public void drawMyNextRoundButton(){
+        myNextRoundButton = new MyNextRoundButton();
+        jPanel.add(myNextRoundButton);
     }
 
     public JDialog getHandDialog() {

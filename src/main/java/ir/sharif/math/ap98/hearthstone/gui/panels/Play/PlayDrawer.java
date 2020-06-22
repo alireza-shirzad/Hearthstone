@@ -8,7 +8,6 @@ import javax.swing.*;
 public class PlayDrawer extends Drawer {
     private BottomPanel bottomPanel;
     private UpPanel upPanel;
-    private NextRoundButton nextRoundButton;
     public PlayDrawer(JPanel jPanel) {
         super(jPanel);
     }
@@ -20,8 +19,5 @@ public class PlayDrawer extends Drawer {
         upPanel = new UpPanel();
         jPanel.add(upPanel);
     }
-    public void drawNextRoundButton(){
-        nextRoundButton = new NextRoundButton();
-        jPanel.add(nextRoundButton);
-    }
+
 }

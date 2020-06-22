@@ -26,6 +26,8 @@ public class GameEntity {
         this.deck = deck;
         this.hero = hero;
         this.type = type;
+        this.numOfTurn = 1;
+        this.numOfMana = 1;
     }
     public GameEntity(Player player, Hand hand, SimpleDeck deck, Passive passive, Hero hero, MatchState.EntityType type) {
         this(player, hand, deck, hero, type);

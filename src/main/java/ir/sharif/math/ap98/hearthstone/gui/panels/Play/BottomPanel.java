@@ -20,6 +20,7 @@ public class BottomPanel extends MyPanel {
     }
     @Override
     public void design() {
+        drawer.drawMyNextRoundButton();
         drawer.drawHeroLabel();
         drawer.drawHeroPowerButton();
         drawer.drawshowHandButton();

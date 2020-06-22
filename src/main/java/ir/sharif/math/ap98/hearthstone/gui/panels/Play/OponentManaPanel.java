@@ -10,7 +10,7 @@ public class OponentManaPanel extends MyPanel {
     private ManaDrawer drawer;
     public OponentManaPanel(){
         drawer = new ManaDrawer(this);
-        this.setBounds(658,100,500,200);
+        this.setBounds(658,80,500,200);
         this.setLayout(new FlowLayout(FlowLayout.LEFT));
         design();
     }

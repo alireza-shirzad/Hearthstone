@@ -18,11 +18,11 @@ public class ManaDrawer extends Drawer {
         }
         int ShinyMana = gameEntity.getNumOfTurn();
         if (ShinyMana>10) ShinyMana = 10;
-        for (int i = 0; i <gameEntity.getNumOfMana() ; i++) {
+        for (int i = 0; i <ShinyMana ; i++) {
             jPanel.add(new ManaLabel(ManaLabel.Type.SHINY));
         }
 
-        for (int i = 0; i <ShinyMana - MatchState.get().getMyEntity().getNumOfMana(); i++) {
+        for (int i = 0; i <ShinyMana - gameEntity.getNumOfMana(); i++) {
             jPanel.add(new ManaLabel(ManaLabel.Type.DARK));
         }
 

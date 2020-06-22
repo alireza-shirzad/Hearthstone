@@ -18,7 +18,6 @@ public class PlayPanel extends MyPanel {
     }
     @Override
     public void design() {
-        drawer.drawNextRoundButton();
         drawer.drawBottomPanel();
         drawer.drawUpPanel();
     }
