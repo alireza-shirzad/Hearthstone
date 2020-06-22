@@ -28,6 +28,7 @@ public class GameEntity {
         this.type = type;
         this.numOfTurn = 1;
         this.numOfMana = 1;
+        middleCards = new ArrayList<>();
     }
     public GameEntity(Player player, Hand hand, SimpleDeck deck, Passive passive, Hero hero, MatchState.EntityType type) {
         this(player, hand, deck, hero, type);
@@ -43,14 +44,23 @@ public class GameEntity {
         }
     }
 
-    public void playCard(Card card){
-        if(card.getCardType()== Card.Type.Minion & middleCards.size()>=7){
-            //TODO
+    public PlayCardResult playCard(Card card){
+        if(card.getManaCost()>numOfMana){
+            return PlayCardResult.ERROR_NOMANA;
+        } else if(card.getCardType()== Card.Type.Minion & middleCards.size()>=7){
+            return PlayCardResult.ERROR_FULLMIDDLE;
         }else {
             middleCards.add(card);
             hand.remove(card);
             numOfMana = getNumOfMana() - card.getManaCost();
+            return PlayCardResult.SUCCESS;
         }
+    }
+
+    public enum PlayCardResult{
+        SUCCESS,
+        ERROR_NOMANA,
+        ERROR_FULLMIDDLE;
     }
 
     public void nextTurn(){
@@ -107,4 +117,5 @@ public class GameEntity {
     public void setNumOfMana(int numOfMana) {
         if (numOfMana<=10) this.numOfMana = numOfMana;
     }
+
 }
