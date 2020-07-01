@@ -3,6 +3,9 @@ package ir.sharif.math.ap98.hearthstone.gui.draggables;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card;
+import ir.sharif.math.ap98.hearthstone.game.GameEntity;
+import ir.sharif.math.ap98.hearthstone.game.GameState;
+import ir.sharif.math.ap98.hearthstone.game.MatchState;
 import ir.sharif.math.ap98.hearthstone.gui.GUIConstants;
 import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 
@@ -29,50 +32,6 @@ public abstract class MiddleCard extends JLabel {
 
     public MiddleCard(Card card, int num) {
         paintCard(card,130,140);
-        addMouseListener(new MouseListener() {
-
-            @Override
-            public void mouseClicked(MouseEvent e) { }
-
-            @Override
-            public void mousePressed(MouseEvent e) {
-                setScreenX(e.getXOnScreen());
-                setScreenY(e.getYOnScreen());
-                setMyX(getX());
-                setMyY(getY());
-                setCardInMove(true);
-            }
-
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                setLocation(getMyX() , getMyY());
-                setCardInMove(false);
-            }
-
-            @Override
-            public void mouseEntered(MouseEvent e) {
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) { }
-
-        });
-        addMouseMotionListener(new MouseMotionListener() {
-
-            @Override
-            public void mouseDragged(MouseEvent e) {
-                int deltaX = e.getXOnScreen() - getScreenX();
-                int deltaY = e.getYOnScreen() - getScreenY();
-
-                setLocation(getMyX() + deltaX, getMyY() + deltaY);
-            }
-
-            @Override
-            public void mouseMoved(MouseEvent e) {
-            }
-
-        });
-
     }
 
 
@@ -101,6 +60,59 @@ public abstract class MiddleCard extends JLabel {
         }
         Image newimg = img.getScaledInstance( w, h,  java.awt.Image.SCALE_SMOOTH ) ;
         this.setIcon(new ImageIcon(newimg));
+    }
+
+
+
+    protected void lockDnD(MatchState.EntityType type){
+        addMouseListener(new MouseListener() {
+
+            @Override
+            public void mouseClicked(MouseEvent e) { }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (MatchState.get().getTurn()==type) {
+                    setScreenX(e.getXOnScreen());
+                    setScreenY(e.getYOnScreen());
+                    setMyX(getX());
+                    setMyY(getY());
+                    setCardInMove(true);
+                }
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if (MatchState.get().getTurn()==type) {
+                    setLocation(getMyX(), getMyY());
+                    setCardInMove(false);
+                }
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) { }
+
+        });
+        addMouseMotionListener(new MouseMotionListener() {
+
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                if (MatchState.get().getTurn()==type) {
+                    int deltaX = e.getXOnScreen() - getScreenX();
+                    int deltaY = e.getYOnScreen() - getScreenY();
+                    setLocation(getMyX() + deltaX, getMyY() + deltaY);
+                }
+            }
+
+            @Override
+            public void mouseMoved(MouseEvent e) {
+            }
+
+        });
     }
 
 

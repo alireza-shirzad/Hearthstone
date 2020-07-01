@@ -1,4 +1,5 @@
 package ir.sharif.math.ap98.hearthstone.gui.Buttons;
+import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 import ir.sharif.math.ap98.hearthstone.game.GameEntity;
 import ir.sharif.math.ap98.hearthstone.game.GameState;
 import ir.sharif.math.ap98.hearthstone.game.MatchState;
@@ -21,6 +22,7 @@ public class ShowHandButton extends MyButton {
         this.setOpaque(false);
         this.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
+                if (type == MatchState.get().getTurn())
                 setCursor(new Cursor(Cursor.HAND_CURSOR));
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -33,10 +35,12 @@ public class ShowHandButton extends MyButton {
 
     @Override
     public void press() {
-        if(type== MatchState.EntityType.MY_ENTITY){
-            PlayRefrences.getBottomPanel().getDrawer().drawHandDialogue();
-        }else{
-            PlayRefrences.getUpPanel().getDrawer().drawHandDialogue();
+        if (type == MatchState.get().getTurn()) {
+            if (type == MatchState.EntityType.MY_ENTITY) {
+                PlayRefrences.getBottomPanel().getDrawer().drawHandDialogue();
+            } else {
+                PlayRefrences.getUpPanel().getDrawer().drawHandDialogue();
+            }
         }
     }
 }

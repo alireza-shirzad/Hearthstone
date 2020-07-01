@@ -14,8 +14,11 @@ public class MyNextRoundButton extends NextRoundButton {
         this.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 if(MatchState.get().getTurn()== MatchState.EntityType.MY_ENTITY) {
-                setBorder(BorderFactory.createLineBorder(GUIConstants.COLOR5, 4, true));
+                setBorder(BorderFactory.createLineBorder(GUIConstants.COLOR5, 5, true));
                 setCursor(new Cursor(Cursor.HAND_CURSOR));
+                }else{
+                    setBorder(BorderFactory.createEmptyBorder());
+                    setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
                 }
             }
 
@@ -27,6 +30,8 @@ public class MyNextRoundButton extends NextRoundButton {
     }
     @Override
     public void press() {
+        setBorder(BorderFactory.createEmptyBorder());
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         if(MatchState.get().getTurn()== MatchState.EntityType.MY_ENTITY) {
             MatchState.get().getMyEntity().nextTurn();
             PlayRefrences.getBottomPanel().getDrawer().drawMana();

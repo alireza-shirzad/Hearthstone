@@ -9,6 +9,7 @@ import java.awt.*;
 public class MyMiddleCard extends MiddleCard {
     public MyMiddleCard(Card card, int num) {
         super(card,num);
+        lockDnD(MatchState.EntityType.MY_ENTITY);
         switch (num){
             case 0:
                 this.setBounds(0,320,130,160);
