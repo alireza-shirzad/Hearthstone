@@ -10,6 +10,7 @@ public class PlayPanel extends MyPanel {
     public PlayPanel(){
         drawer = new PlayDrawer(this);
         BackgroundPanel.getInstance().setImage(GUIConstants.DEFAULTPLAYBACKGROUND_ADDRESS);
+        PlayRefrences.setPlayPanel(this);
         design();
     }
     @Override
@@ -18,4 +19,10 @@ public class PlayPanel extends MyPanel {
         drawer.drawUpPanel();
     }
 
+    public PlayDrawer getDrawer() {
+        return drawer;
+    }
+    public void setDrawer(PlayDrawer drawer) {
+        this.drawer = drawer;
+    }
 }

@@ -4,6 +4,7 @@ import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.characters.heros.Hero;
 import ir.sharif.math.ap98.hearthstone.game.Passive.Passive;
 import ir.sharif.math.ap98.hearthstone.game.decks.SimpleDeck;
+import ir.sharif.math.ap98.hearthstone.gui.panels.Play.PlayRefrences;
 import ir.sharif.math.ap98.hearthstone.players.Player;
 
 import java.util.ArrayList;
@@ -53,6 +54,9 @@ public class GameEntity {
             middleCards.add(card);
             hand.remove(card);
             numOfMana = getNumOfMana() - card.getManaCost();
+            if(card.getCardType()== Card.Type.Minion){
+                PlayRefrences.getPlayPanel().getDrawer().drawCardsPanel();
+            }
             return PlayCardResult.SUCCESS;
         }
     }

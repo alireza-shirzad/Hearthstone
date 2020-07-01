@@ -1,7 +1,7 @@
 {
   "username": "ali",
   "passwordHash": "a5f7801d0d6839e30dc8e374c32a803271fdd6839f9828d6788e429bbc0b1cf3",
-  "gold": 48,
+  "gold": 34,
   "simpleDecks": [
     {
       "HeroType": "Mage",
@@ -10,15 +10,109 @@
       "NumOfWins": 0,
       "Cards": [
         {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
           "data": {
-            "cardType": "Spell",
-            "heroClass": "Mage",
-            "rarity": "Rare",
-            "manaCost": 4,
-            "description": "Transform a minion into a +1/+1 sheep",
+            "attack": 4,
+            "health": 3,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 3,
+            "description": "Battlecry: Freeze an enemy",
             "goldCost": 2,
-            "name": "Polymorph",
+            "name": "Frozen Shadoweaver",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 2,
+            "health": 1,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 1,
+            "description": "Battlecry: Deal 1 damage to a minion and give it Spell Damage +1",
+            "goldCost": 2,
+            "name": "Ethereal Augmerchant",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 3,
+            "health": 2,
+            "subtype": "Beast",
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Free",
+            "manaCost": 2,
+            "description": "",
+            "goldCost": 2,
+            "name": "Bloodfen Raptor",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 4,
+            "health": 3,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 3,
+            "description": "Battlecry: Freeze an enemy",
+            "goldCost": 2,
+            "name": "Frozen Shadoweaver",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 2,
+            "health": 3,
+            "subtype": "Beast",
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Rare",
+            "manaCost": 2,
+            "description": "",
+            "goldCost": 2,
+            "name": "River Crocolisk",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 5,
+            "health": 5,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Legendary",
+            "manaCost": 5,
+            "description": "Battlecry: Enemy spells cost (5) more next turn.",
+            "goldCost": 2,
+            "name": "Loatheb",
+            "characterType": "Card"
+          }
+        },
+        {
+          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+          "data": {
+            "attack": 2,
+            "health": 1,
+            "cardType": "Minion",
+            "heroClass": "Neutral",
+            "rarity": "Common",
+            "manaCost": 1,
+            "description": "Battlecry: Deal 1 damage to a minion and give it Spell Damage +1",
+            "goldCost": 2,
+            "name": "Ethereal Augmerchant",
             "characterType": "Card"
           }
         },
@@ -35,19 +129,6 @@
             "description": "Taunt. Deathrattle: Deal 2 damage to ALL characters",
             "goldCost": 2,
             "name": "Abomination",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
-          "data": {
-            "cardType": "Spell",
-            "heroClass": "Neutral",
-            "rarity": "Common",
-            "manaCost": 2,
-            "description": "Give a minion +2 Attack. Combo: +4 Attack instead",
-            "goldCost": 2,
-            "name": "Cold Blood",
             "characterType": "Card"
           }
         }
@@ -84,21 +165,6 @@
             "description": "Battlecry: If you control a Beast, gain Taunt",
             "goldCost": 2,
             "name": "Fossilized Devilsaur",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-          "data": {
-            "attack": 2,
-            "health": 1,
-            "cardType": "Minion",
-            "heroClass": "Neutral",
-            "rarity": "Common",
-            "manaCost": 1,
-            "description": "Battlecry: Deal 1 damage to a minion and give it Spell Damage +1",
-            "goldCost": 2,
-            "name": "Ethereal Augmerchant",
             "characterType": "Card"
           }
         }
@@ -140,22 +206,6 @@
             "name": "Blood Fury",
             "characterType": "Card"
           }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-          "data": {
-            "attack": 3,
-            "health": 2,
-            "subtype": "Beast",
-            "cardType": "Minion",
-            "heroClass": "Neutral",
-            "rarity": "Free",
-            "manaCost": 2,
-            "description": "",
-            "goldCost": 2,
-            "name": "Bloodfen Raptor",
-            "characterType": "Card"
-          }
         }
       ]
     },
@@ -166,22 +216,6 @@
       "NumOfWins": 0,
       "Cards": [
         {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-          "data": {
-            "attack": 9,
-            "health": 9,
-            "subtype": "Beast",
-            "cardType": "Minion",
-            "heroClass": "Hunter",
-            "rarity": "Legendary",
-            "manaCost": 7,
-            "description": "After your opponent plays a minion, attack it",
-            "goldCost": 2,
-            "name": "Swamp King Dred",
-            "characterType": "Card"
-          }
-        },
-        {
           "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
           "data": {
             "cardType": "Spell",
@@ -191,49 +225,6 @@
             "description": "Destroy a random enemy minion",
             "goldCost": 2,
             "name": "Deadly Shot",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
-          "data": {
-            "cardType": "Spell",
-            "heroClass": "Neutral",
-            "rarity": "Rare",
-            "manaCost": 2,
-            "description": "Draw 3 cards. Discard any spells drawn",
-            "goldCost": 2,
-            "name": "Book of Specters",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
-          "data": {
-            "attack": 2,
-            "durability": 2,
-            "cardType": "Weapon",
-            "heroClass": "Neutral",
-            "rarity": "Common",
-            "manaCost": 1,
-            "description": "",
-            "goldCost": 2,
-            "name": "Battle Axe",
-            "characterType": "Card"
-          }
-        },
-        {
-          "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
-          "data": {
-            "attack": 4,
-            "health": 3,
-            "cardType": "Minion",
-            "heroClass": "Neutral",
-            "rarity": "Common",
-            "manaCost": 3,
-            "description": "Battlecry: Freeze an enemy",
-            "goldCost": 2,
-            "name": "Frozen Shadoweaver",
             "characterType": "Card"
           }
         }
@@ -303,6 +294,124 @@
           "description": "Deal 6 damage",
           "goldCost": 2,
           "name": "Fireball",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card",
+        "data": {
+          "attack": 2,
+          "durability": 2,
+          "cardType": "Weapon",
+          "heroClass": "Neutral",
+          "rarity": "Common",
+          "manaCost": 1,
+          "description": "",
+          "goldCost": 2,
+          "name": "Battle Axe",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+        "data": {
+          "cardType": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "Rare",
+          "manaCost": 2,
+          "description": "Draw 3 cards. Discard any spells drawn",
+          "goldCost": 2,
+          "name": "Book of Specters",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+        "data": {
+          "attack": 9,
+          "health": 9,
+          "subtype": "Beast",
+          "cardType": "Minion",
+          "heroClass": "Hunter",
+          "rarity": "Legendary",
+          "manaCost": 7,
+          "description": "After your opponent plays a minion, attack it",
+          "goldCost": 2,
+          "name": "Swamp King Dred",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+        "data": {
+          "cardType": "Spell",
+          "heroClass": "Mage",
+          "rarity": "Rare",
+          "manaCost": 4,
+          "description": "Transform a minion into a +1/+1 sheep",
+          "goldCost": 2,
+          "name": "Polymorph",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Spell_Card",
+        "data": {
+          "cardType": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "Common",
+          "manaCost": 2,
+          "description": "Give a minion +2 Attack. Combo: +4 Attack instead",
+          "goldCost": 2,
+          "name": "Cold Blood",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+        "data": {
+          "attack": 4,
+          "health": 2,
+          "subtype": "Beast",
+          "cardType": "Minion",
+          "heroClass": "Warlock",
+          "rarity": "Legendary",
+          "manaCost": 3,
+          "description": "At the end of your turn, deal 1 damage to all other minions",
+          "goldCost": 2,
+          "name": "Dreadscale",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+        "data": {
+          "attack": 3,
+          "health": 6,
+          "subtype": "Mech",
+          "cardType": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "Rare",
+          "manaCost": 8,
+          "description": "Taunt,Battlecry: Summon a copy of this minion",
+          "goldCost": 2,
+          "name": "Tomb Warden",
+          "characterType": "Card"
+        }
+      },
+      {
+        "type": "ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card",
+        "data": {
+          "attack": 9,
+          "health": 9,
+          "subtype": "Beast",
+          "cardType": "Minion",
+          "heroClass": "Hunter",
+          "rarity": "Legendary",
+          "manaCost": 7,
+          "description": "After your opponent plays a minion, attack it",
+          "goldCost": 2,
+          "name": "Swamp King Dred",
           "characterType": "Card"
         }
       }

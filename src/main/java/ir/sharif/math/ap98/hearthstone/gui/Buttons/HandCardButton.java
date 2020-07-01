@@ -20,11 +20,13 @@ public class HandCardButton extends CardButton {
             result = MatchState.get().getMyEntity().playCard(card);
             if(result== GameEntity.PlayCardResult.SUCCESS)
                 PlayRefrences.getBottomPanel().getDrawer().drawMana();
+            PlayRefrences.getBottomPanel().getDrawer().getHandDialog().dispose();
         }else if (type== MatchState.EntityType.OPONENT_ENTITY
                 & MatchState.get().getTurn()== MatchState.EntityType.OPONENT_ENTITY){
             result = MatchState.get().getOponentEntity().playCard(card);
             if(result== GameEntity.PlayCardResult.SUCCESS)
                 PlayRefrences.getUpPanel().getDrawer().drawMana();
+            PlayRefrences.getUpPanel().getDrawer().getHandDialog().dispose();
         }
     }
 }

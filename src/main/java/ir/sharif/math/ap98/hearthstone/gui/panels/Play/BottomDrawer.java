@@ -53,6 +53,7 @@ public class BottomDrawer extends Drawer {
         jPanel.add(myNextRoundButton);
     }
 
+
     public JDialog getHandDialog() {
         return handDialog;
     }
