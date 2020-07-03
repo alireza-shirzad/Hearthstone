@@ -40,10 +40,18 @@ public class MyMinionDialog extends MinionDialog {
                     break;
                 default:
                     Card card = MatchState.get().getOponentEntity().getMiddleCards().get(Integer.parseInt(s.substring(0,1)));
-                    if (card.getCardType()== Card.Type.Minion)
-                        attacker.attack((Minion_Card) card);
-                    else
-                        attacker.attack((Weapon_Card) card);
+                    if (card.getCardType()== Card.Type.Minion) {
+                        Minion_Card minion_card = (Minion_Card) card;
+                        attacker.attack(minion_card);
+                        if (minion_card.getHealth()<=0)
+                            MatchState.get().getOponentEntity().getMiddleCards().remove(card);
+                    }
+                    else {
+                        Weapon_Card weapon_card = (Weapon_Card) card;
+                        attacker.attack(weapon_card);
+                        if(weapon_card.getDurability()<=0)
+                            MatchState.get().getOponentEntity().getMiddleCards().remove(card);
+                    }
                     break;
             }
         }

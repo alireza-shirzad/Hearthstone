@@ -27,7 +27,6 @@ public class UpDrawer extends Drawer {
     }
 
     public void drawHeroLabel(){
-        System.out.println("hoooooy");
         if (heroLabel!=null) jPanel.remove(heroLabel);
         heroLabel = new HeroLabel(MatchState.get().getMyEntity().getHero());
         heroLabel.setBounds(160,0,130,150);

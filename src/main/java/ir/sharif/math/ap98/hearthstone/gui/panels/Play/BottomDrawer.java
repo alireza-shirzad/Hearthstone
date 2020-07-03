@@ -23,6 +23,7 @@ public class BottomDrawer extends Drawer {
     private MyManaPanel myManaPanel;
     private MyNextRoundButton myNextRoundButton;
     private MyMinionDialog myMinionDialog;
+
     public BottomDrawer(JPanel jPanel) {
         super(jPanel);
     }
