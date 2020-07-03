@@ -1,4 +1,5 @@
 package ir.sharif.math.ap98.hearthstone.characters.cards;
+import ir.sharif.math.ap98.hearthstone.characters.Character;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.characters.heros.Hero;
 
@@ -14,6 +15,19 @@ public class Minion_Card extends Card {
         this.attack = attack;
         this.health = health;
         this.subtype = subtype;
+    }
+
+
+    public void attack(Hero hero){
+        hero.setHP(hero.getHP()-attack);
+    }
+
+    public void attack(Minion_Card minion_card){
+        minion_card.setHealth(minion_card.getHealth()-attack);
+    }
+
+    public void attack(Weapon_Card weapon_card){
+        weapon_card.setDurability(weapon_card.getDurability()-attack);
     }
 
     public int getAttack() {

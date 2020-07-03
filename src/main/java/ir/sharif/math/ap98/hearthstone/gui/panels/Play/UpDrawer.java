@@ -1,11 +1,14 @@
 package ir.sharif.math.ap98.hearthstone.gui.panels.Play;
 
+import ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card;
 import ir.sharif.math.ap98.hearthstone.game.Hand;
 import ir.sharif.math.ap98.hearthstone.game.MatchState;
 import ir.sharif.math.ap98.hearthstone.gui.Buttons.*;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.HeroLabel;
 import ir.sharif.math.ap98.hearthstone.gui.dialogs.HandDialog;
+import ir.sharif.math.ap98.hearthstone.gui.dialogs.MyMinionDialog;
+import ir.sharif.math.ap98.hearthstone.gui.dialogs.OponentMinonDialog;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,11 +20,15 @@ public class UpDrawer extends Drawer {
     private ShowHandButton showHandButton;
     private OponentManaPanel oponentManaPanel;
     private OponentNextRoundButton oponentNextRoundButton;
+    private OponentMinonDialog oponentMinonDialog;
+
     public UpDrawer(JPanel jPanel) {
         super(jPanel);
     }
 
     public void drawHeroLabel(){
+        System.out.println("hoooooy");
+        if (heroLabel!=null) jPanel.remove(heroLabel);
         heroLabel = new HeroLabel(MatchState.get().getMyEntity().getHero());
         heroLabel.setBounds(160,0,130,150);
         jPanel.add(heroLabel);
@@ -51,6 +58,11 @@ public class UpDrawer extends Drawer {
     public void drawOponentNextRoundButton(){
         oponentNextRoundButton = new OponentNextRoundButton();
         jPanel.add(oponentNextRoundButton);
+    }
+
+    public void drawMinionDialogue(Minion_Card attacker){
+        if (oponentMinonDialog!=null) oponentMinonDialog.dispose();
+        oponentMinonDialog = new OponentMinonDialog(attacker);
     }
 
 

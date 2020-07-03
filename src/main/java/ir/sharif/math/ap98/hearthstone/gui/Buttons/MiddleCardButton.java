@@ -10,22 +10,21 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.font.TextAttribute;
+import java.util.Map;
 
 public abstract class MiddleCardButton extends JButton {
     public MiddleCardButton(Card card, int num) {
         this.setLayout(null);
         this.setContentAreaFilled(false);
+        this.setBorder(BorderFactory.createEmptyBorder());
         this.requestFocus();
         this.setOpaque(false);
         paintCard(card,130,140);
-        addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
 
-            }
-        });
+
     }
-    private void paintCard(Card card, int w, int h){
+    protected void paintCard(Card card, int w, int h){
         Font font = new Font(GUIConstants.HEADER1_FONT_NAME,Font.BOLD,90);
         Image img = ImageOperater.getInstance().Read(card.getName() + ".png"
                 , ImageOperater.imageType.CARD);
