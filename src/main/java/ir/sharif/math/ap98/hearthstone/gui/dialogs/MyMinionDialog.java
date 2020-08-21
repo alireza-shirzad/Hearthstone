@@ -1,6 +1,5 @@
 package ir.sharif.math.ap98.hearthstone.gui.dialogs;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Card;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Minion_Card;
 import ir.sharif.math.ap98.hearthstone.characters.cards.Weapon_Card;

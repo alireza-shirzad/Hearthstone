@@ -10,7 +10,6 @@ import ir.sharif.math.ap98.hearthstone.gui.fields.MyPassField;
 import ir.sharif.math.ap98.hearthstone.gui.fields.MyTextField;
 import ir.sharif.math.ap98.hearthstone.io.fileOperation.ImageOperater;
 import ir.sharif.math.ap98.hearthstone.players.SignInManager;
-import sun.jvm.hotspot.debugger.ThreadAccess;
 
 import javax.swing.*;
 import java.awt.*;

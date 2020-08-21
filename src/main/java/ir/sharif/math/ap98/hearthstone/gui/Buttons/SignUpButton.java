@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 public class SignUpButton extends SignButton {
     public SignUpButton(){
         super("Sign Up");
-        this.setBounds(30, 200, 280, 80);
+        this.setBounds(30, 200, 300, 80);
     }
 
     @Override

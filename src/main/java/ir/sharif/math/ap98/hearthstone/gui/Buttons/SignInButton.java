@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 public class SignInButton extends SignButton {
     public SignInButton(){
         super("Sign In");
-        this.setBounds(770, 200, 280, 80);
+        this.setBounds(770, 200, 300, 80);
     }
 
     @Override

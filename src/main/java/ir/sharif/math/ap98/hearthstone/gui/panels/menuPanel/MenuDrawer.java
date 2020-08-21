@@ -4,8 +4,7 @@ import ir.sharif.math.ap98.hearthstone.gui.Buttons.MenuButton;
 import ir.sharif.math.ap98.hearthstone.gui.Drawer;
 import ir.sharif.math.ap98.hearthstone.gui.Labels.Header;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
-import jdk.javadoc.internal.doclets.formats.html.markup.Head;
-import sun.security.ec.XDHPublicKeyImpl;
+
 
 import javax.swing.*;
 

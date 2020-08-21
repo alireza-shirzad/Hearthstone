@@ -35,7 +35,7 @@ public final class GUIConstants {
             COLOR5 = new Color(202,207,203);
             HEADER_FONT_NAME = "MAD hacker";
             HEADER1_FONT_NAME = "Stencil";
-            HEADER_FONT_SIZE = 90;
+            HEADER_FONT_SIZE = 70;
             HEADER1_FONT_SIZE = 40;
         }
 

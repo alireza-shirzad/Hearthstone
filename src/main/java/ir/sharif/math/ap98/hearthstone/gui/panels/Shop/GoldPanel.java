@@ -3,7 +3,6 @@ package ir.sharif.math.ap98.hearthstone.gui.panels.Shop;
 import ir.sharif.math.ap98.hearthstone.gui.MainFrame;
 import ir.sharif.math.ap98.hearthstone.gui.panels.MyPanel;
 import ir.sharif.math.ap98.hearthstone.gui.panels.collections.SearchDrawer;
-import sun.rmi.rmic.Main;
 
 import javax.swing.*;
 
